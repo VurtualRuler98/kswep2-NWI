@@ -1,0 +1,5 @@
+"AddonInfo"
+{
+	"name"		"Vurtual's KSWEPs - Insurgency/Day of Infamy"
+	"override"	"1"
+}
