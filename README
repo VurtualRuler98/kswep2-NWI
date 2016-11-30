@@ -1,0 +1,12 @@
+These weapons require the KSwep2 base. Get it from https://github.com/VurtualRuler98/kswep2 unless this is a fork and they told you to use a different one.
+You'll have to mount the standalone Insurgency for its weapons, and Day of Infamy for its, and Garry probably didn't add them yet to the menu, so you'll have to go to your garrysmod/cfg/mount.cfg and add lines for them.
+They should look like this on linux, at least: 
+"mountcfg"
+{
+	"doi"		"/home/vurtual/.steam/steam/steamapps/common/dayofinfamy/doi"
+	"ins2"		"/home/vurtual/.steam/steam/steamapps/common/insurgency2/insurgency"
+}
+Some of the weapons require hexed models to work, but I don't know how I'd release those. If you're really dedicated, you can hex them yourself.
+Sound configs are included, and shouldn't clash with any existing usable garry's mod sounds.
+
+
