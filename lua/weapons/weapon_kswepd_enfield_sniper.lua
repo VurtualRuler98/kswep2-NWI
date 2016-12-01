@@ -22,7 +22,7 @@ if (SERVER) then
 end
 
 if (CLIENT) then
-	SWEP.PrintName = "DOI Enfield No. 4 Mk I"
+	SWEP.PrintName = "DOI Enfield No. 4 Mk I (T)"
 	SWEP.Author = "vurtual"
 	SWEP.Slot = 2
 	SWEP.SlotPos = 0
@@ -35,11 +35,11 @@ SWEP.Primary.Delay = 0.3
 SWEP.Primary.Damage = 38
 SWEP.Primary.Spread = 0.003
 SWEP.Spawnable = true
-SWEP.DefaultBattlesightZero=92*3
-SWEP.DefaultMinZero=92*2
-SWEP.DefaultZero=0
-SWEP.DefaultMaxZero=92*13
-SWEP.DefaultZeroStep=92
+SWEP.DefaultBattlesightZero=0 --this scope actually goes to 0
+SWEP.DefaultMinZero=0
+SWEP.DefaultZero=92*3
+SWEP.DefaultMaxZero=92*10
+SWEP.DefaultZeroStep=46
 SWEP.MuzzleVelMod=1
 SWEP.ModeName0="SINGLE"
 SWEP.DrawOnce=false
@@ -74,18 +74,18 @@ SWEP.MagType="enfieldclip"
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOAD_INSERT_PULL
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOADEMPTY
 --SWEP.SafetyAnim=ACT_VM_FIREMODE
-SWEP.IronSightsPos = Vector(-2.565, -5, 1.5)
+SWEP.IronSightsPos = Vector(-2.565, -5, 0.8)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.InsNoIronAnim=true
 SWEP.SingleReload=true
 SWEP.MergeAttachments = {
  }
-SWEP.DefaultSight="models/weapons/upgrades/a_iron_enfield.mdl"
---[[SWEP.HasCustomOptic=true
-SWEP.OpticSight = table.Copy(KswepDefaultSight)
-SWEP.OpticSight.model="models/weapons/upgrades/a_optic_springfield.mdl"
-SWEP.OpticSight.rtscope=true
-SWEP.OpticSight.sensitivity=2.5]]
+SWEP.DefaultSight="models/weapons/upgrades/a_optic_enfield.mdl"
+SWEP.RTScope=true
+SWEP.ScopeMat="models/weapons/optics/lense_rt"
+SWEP.ScopeOverlayMat="models/weapons/optics/enfield_crosshair"
+SWEP.MaxSensitivity=3.5
+SWEP.ScopeFOV=5.16
 SWEP.NoOpticMounting=true
 SWEP.InsAttachments=true
 SWEP.Anims.InitialDrawAnim=ACT_VM_READY
