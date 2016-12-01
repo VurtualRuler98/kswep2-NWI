@@ -84,7 +84,7 @@ SWEP.ScopeOffsetAng=Vector(0,0,0)
 SWEP.InsNoIronAnim=true
 SWEP.ReloadFullClipazineOnly=true
 SWEP.MergeAttachments = {
-	wew = "models/weapons/upgrades/a_iron_garand_s.mdl"
+	wew = "models/weapons/upgrades/a_iron_garand_l.mdl"
  }
 --SWEP.OpticMountModel = "models/weapons/upgrades/a_modkit_m1a1.mdl" 
 --SWEP.NotOpticMountModel = "models/weapons/upgrades/a_standard_m1a1.mdl"
