@@ -63,7 +63,7 @@ SWEP.InsAnims=true
 SWEP.Auto=false
 SWEP.Firemode=true
 SWEP.HoldType="ar2"
-SWEP.HoldOpen=true
+SWEP.HoldOpen=false
 SWEP.Length=43
 SWEP.OpenBolt=true
 SWEP.IdleType="passive"
@@ -98,7 +98,7 @@ function SWEP:ReloadAct(force)
 	self:ReloadTube()	
 end
 function SWEP:DiscoverModelAnims()
-	self:SetAnim("FireAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_START"))
+	self:SetAnim("ShootAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_START"))
 	self:SetAnim("IronShootAnim",self:DiscoverAnim("ACT_VM_ISHOOT_START"))
 	self:SetAnim("RunAnim",self:DiscoverAnim("ACT_VM_SPRINT"))
 	self:SetAnim("BoltAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_END"))
