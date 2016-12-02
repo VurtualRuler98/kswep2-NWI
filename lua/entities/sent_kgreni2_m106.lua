@@ -9,6 +9,8 @@ ENT.Category	= "Vurtual's base"
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
 ENT.DetonateSound="npc_sniper.firebullet"
+ENT.DetFragRadius="64"
+ENT.DetFragMagnitude="20"
 if (CLIENT) then
 function ENT:Draw()
 	--AddWorldTip( self.Entity:EntIndex(), "ammo", 0.5, self.Entity:GetPos(),self.Entity)
