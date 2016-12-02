@@ -73,8 +73,6 @@ SWEP.Firemode=true
 SWEP.HoldType="pistol"
 SWEP.IdleType="normal"
 SWEP.SelectFire=false
-SWEP.Anims.ReloadAnimEmpty=ACT_VM_RELOADEMPTY
-SWEP.Anims.SafetyAnim=ACT_VM_FIREMODE
 SWEP.IronSightsPos = Vector(-1.85, 2, 1.19)
 SWEP.IronSightsAng = Vector(-1.8,0,0)
 SWEP.InsNoIronAnim=true
@@ -84,18 +82,10 @@ SWEP.MergeAttachments = {
 	speedloader="models/weapons/upgrades/a_speedloader_rev.mdl"
 }
 SWEP.Anims.InitialDrawAnim=ACT_VM_READY
-SWEP.Anims.ReloadAnimEmpty=ACT_VM_RELOADEMPTY
 SWEP.EmptyAnims=false
 SWEP.MagType="38REV"
 SWEP.IsSecondaryWeapon=true
-SWEP.Anims.IdleAnimEmpty=ACT_VM_IDLE_EMPTY
-SWEP.Anims.IronAnimEmpty=ACT_VM_IIDLE_EMPTY
-SWEP.Anims.ShootLastAnim=ACT_VM_SHOOTLAST
-SWEP.Anims.ShootLastIronAnim=ACT_VM_ISHOOT_LAST
-SWEP.Anims.StowAnimEmpty=ACT_VM_HOLSTER_EMPTY
-SWEP.Anims.UnstowAnimEmpty=ACT_VM_DRAW_EMPTY
 SWEP.Anims.LowerAnim = ACT_VM_DOWN
-SWEP.Anims.LowerAnimEmpty = ACT_VM_DOWN_EMPTY
 function SWEP:ReloadAct(force)
 	self:ReloadMag(force)	
 end
