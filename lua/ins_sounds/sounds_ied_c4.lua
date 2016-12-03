@@ -28,6 +28,24 @@ sound.Add({
 	channel = CHAN_ITEM
 })
 sound.Add({
+	name="Weapon_C4.SecurityDetonator",
+	volume = 1,
+	sound = "weapons/C4/handling/c4_trigger_security.wav",
+	channel = CHAN_ITEM
+})
+sound.Add({
+	name="Weapon_C4.InsurgentDetonator",
+	volume = 1,
+	sound = "weapons/C4/handling/c4_trigger_ins.wav",
+	channel = CHAN_ITEM
+})
+sound.Add({
+	name="Weapon_IED.Detonator",
+	volume = 1,
+	sound = "weapons/IED/handling/IED_trigger_ins.wav",
+	channel = CHAN_ITEM
+})
+sound.Add({
 	name="InsIED.Explode",
 	volume = 1.0,
 	sound = "weapons/IED/IED_detonate_01.wav",
