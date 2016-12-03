@@ -25,20 +25,6 @@ sound.Add({
 	channel = CHAN_STATIC
 })
 sound.Add({
-	name="Weapon_toz.Magrelease",
-	volume = 0.2,
-	sound = "weapons/toz_shotgun/handling/toz_magrelease.wav",
-	level = 65,
-	channel = CHAN_ITEM
-})
-sound.Add({
-	name="Weapon_toz.MagHitrelease",
-	volume = 0.3,
-	sound = "weapons/toz_shotgun/handling/toz_maghitrelease.wav",
-	level = 65,
-	channel = CHAN_ITEM
-})
-sound.Add({
 	name="Weapon_toz.ShellInsert",
 	volume = 0.2,
 	sound = "weapons/toz_shotgun/handling/toz_shell_insert_1.wav",
@@ -63,34 +49,6 @@ sound.Add({
 	name="Weapon_toz.Boltrelease",
 	volume = 0.3,
 	sound = "weapons/toz_shotgun/handling/toz_pumpforward.wav",
-	level = 65,
-	channel = CHAN_ITEM
-})
-sound.Add({
-	name="Weapon_toz.Hit",
-	volume = 0.2,
-	sound = "weapons/toz_shotgun/handling/toz_hit.wav",
-	level = 65,
-	channel = CHAN_ITEM
-})
-sound.Add({
-	name="Weapon_toz.Rattle",
-	volume = 0.2,
-	sound = "weapons/toz_shotgun/handling/toz_rattle.wav",
-	level = 65,
-	channel = CHAN_ITEM
-})
-sound.Add({
-	name="Weapon_toz.MagoutRattle",
-	volume = 0.2,
-	sound = "weapons/toz_shotgun/handling/toz_magout_rattle.wav",
-	level = 65,
-	channel = CHAN_ITEM
-})
-sound.Add({
-	name="Weapon_toz.ROF",
-	volume = 0.2,
-	sound = "weapons/toz_shotgun/handling/toz_fireselect_1.wav",
 	level = 65,
 	channel = CHAN_ITEM
 })
