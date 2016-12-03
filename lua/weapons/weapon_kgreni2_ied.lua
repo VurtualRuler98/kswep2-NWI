@@ -18,3 +18,6 @@ SWEP.FuzeMin=4
 SWEP.FuzeMax=5
 SWEP.GrenadeEntity="sent_kgreni2_ied"
 SWEP.ThrowForce=700
+function SWEP:RunGrenadeCode(grenade)
+	grenade:SetAngles(Angle(0,0,-90))
+end
