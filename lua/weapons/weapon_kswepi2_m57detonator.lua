@@ -5,7 +5,7 @@ if (CLIENT) then
 	SWEP.PrintName = "Ins2 M57 Detonator"
 	SWEP.Author = "vurtual"
 	SWEP.Slot = 5
-	SWEP.SlotPos = 0
+	SWEP.SlotPos = 99
 end
 SWEP.Base="weapon_ksweps_detonator"
 SWEP.Spawnable = true
