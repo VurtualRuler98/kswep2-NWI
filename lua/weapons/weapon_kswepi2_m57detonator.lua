@@ -7,7 +7,7 @@ if (CLIENT) then
 	SWEP.Slot = 5
 	SWEP.SlotPos = 99
 end
-SWEP.Base="weapon_ksweps_detonator"
+SWEP.Base="weapon_kweps_detonator"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 SWEP.Category="Vurtual's Insurgency 2 K-Weapons"
