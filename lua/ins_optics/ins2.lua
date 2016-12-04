@@ -43,7 +43,7 @@ end
 	def.reticle=false
 	def.retoverride=false
 	def.retzoom=0
-	tbl.zerovel=0
+	def.zerovel=0
 	AddKswepScope(def)
 	local tbl = table.Copy(def)
 
