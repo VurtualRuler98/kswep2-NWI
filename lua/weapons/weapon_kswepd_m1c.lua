@@ -24,6 +24,14 @@ SWEP.DefaultZerodata= {
 	default=92,
 	battlesight=false
 }
+SWEP.DefaultZerodataAlt={
+	min=92,
+	max=92*9,
+	step=0,
+	default=92,
+	battlesight=false
+	
+}
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_garand_doi.mdl"
 --SWEP.WorldModel = "models/weapons/w_mk18.mdl"
@@ -78,7 +86,7 @@ SWEP.RTScope=true
 SWEP.ScopeMat="models/weapons/optics/lense_rt"
 SWEP.ScopeOverlayMat="models/weapons/optics/weaver_crosshair"
 SWEP.MaxSensitivity=2.5
-SWEP.ScopeFOV=5.16
+SWEP.ScopeFOV=6.7
 SWEP.InsAttachments=true
 SWEP.NoOpticMounting=true
 SWEP.Anims.IdleAnimEmpty=ACT_VM_IDLE_EMPTY
