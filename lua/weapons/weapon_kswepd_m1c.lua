@@ -27,7 +27,7 @@ SWEP.DefaultZerodata= {
 SWEP.DefaultZerodataAlt={
 	min=92,
 	max=92*9,
-	step=0,
+	step=92,
 	default=92,
 	battlesight=false
 	
