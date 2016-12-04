@@ -35,6 +35,13 @@ SWEP.Primary.Damage = 25
 SWEP.Primary.Spread = 0.0045
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
+SWEP.DefaultZerodata = {
+	min=0,
+	max=1000,
+	step=100,
+	default=0,
+	battlesight=440
+}
 SWEP.DefaultZero=0
 SWEP.DefaultBattlesightZero=440
 SWEP.DefaultMinZero=0

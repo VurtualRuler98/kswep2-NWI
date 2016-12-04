@@ -36,8 +36,13 @@ SWEP.Primary.Spread = 0.007
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
 SWEP.OpenBolt=true
-SWEP.DefaultZero=92
-SWEP.DefaultBattlesightZero=0
+SWEP.DefaultZerodata= {
+	min=92,
+	max=92,
+	step=0,
+	default=92,
+	battlesight=false
+}
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_sterling.mdl"
 --SWEP.WorldModel = "models/weapons/w_mk18.mdl"

@@ -18,46 +18,42 @@ limitations under the License.
 
 
 if (SERVER) then
-	AddCSLuaFile("shared.lua")
+	AddCSLuaFile()
 end
 
 if (CLIENT) then
-	SWEP.PrintName = "ins2 'M91/30 Tranquilizer'"
+	SWEP.PrintName = "DOI Karabiner 98k"
 	SWEP.Author = "vurtual"
 	SWEP.Slot = 2
-	SWEP.SlotPos = 0
+	SWEP.SlotPos = 99
 end
-SWEP.Anims=SWEP.Anims or {}
-SWEP.Category = "Vurtual's Insurgency 2 K-Weapons"
-SWEP.Base = "weapon_kswep_tranqbase"
-SWEP.Primary.Delay = 0.8
-SWEP.Primary.Damage = 0
+
+SWEP.Anims = SWEP.Anims or {}
+SWEP.Category = "Vurtual's Day of Infamy K-Weapons"
+SWEP.Base = "weapon_kswep"
+SWEP.Primary.Delay = 0.3
 SWEP.Primary.Spread = 0.003
 SWEP.Spawnable = true
-SWEP.DefaultZero=100
-SWEP.DefaultBattlesightZero=0
 SWEP.DefaultZerodata = {
 	min=100,
 	max=2000,
-	step=0,
+	step=100,
 	default=100,
 	battlesight=false
 }
-SWEP.MuzzleVelMod=1.04
+SWEP.MuzzleVelMod=1
+SWEP.ModeName0="SINGLE"
 SWEP.DrawOnce=false
-SWEP.SingleReloadFiringPin=true
 SWEP.AdminSpawnable = true
-SWEP.ViewModel = "models/weapons/v_mosin.mdl"
+SWEP.ViewModel = "models/weapons/v_kar98k.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
-SWEP.FlashlightModel="models/weapons/upgrades/a_flashlight_band.mdl"
-SWEP.LaserModel="models/weapons/upgrades/a_laser_band.mdl"
 SWEP.UseHands = false
-SWEP.MagSize = 1
-SWEP.MaxMags = 25
+SWEP.MagSize = 5
+SWEP.MaxMags = 20
 SWEP.Primary.ClipSize = SWEP.MagSize
-SWEP.Caliber = "vammo_762x54t"
-SWEP.Primary.Sound = Sound("Weapon_tmosin.Single")
-SWEP.Primary.SoundEmpty = Sound("weapon_mosin.Empty")
+SWEP.Caliber = "vammo_792x57_ball"
+SWEP.Primary.Sound = Sound("Weapon_kar98.Single")
+SWEP.Primary.SoundEmpty = Sound("weapon_kar98.Empty")
 SWEP.ViewModelFlip = false
 SWEP.Secondary.Ammo = ""
 SWEP.CurrentlyReloading=0
@@ -69,47 +65,42 @@ SWEP.Auto=false
 SWEP.Firemode=true
 SWEP.HoldType="ar2"
 SWEP.HoldOpen=false
-SWEP.Length=48
+SWEP.Length=43
 SWEP.OpenBolt=true
-SWEP.LengthSup=0
-SWEP.Suppressable=false
-SWEP.SuppressorModel=nil
-SWEP.MuzzleVelModSup= 1
-SWEP.RecoilModSup=1
-SWEP.SpreadModSup=0
 SWEP.IdleType="passive"
 SWEP.SelectFire=false
+SWEP.MagType="kar98kclip"
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOAD_INSERT_PULL
-SWEP.Anims.StartReloadAnim = ACT_VM_RELOAD
-SWEP.Anims.MidReloadAnim = ACT_VM_RELOAD_INSERT
-SWEP.Anims.EndReloadAnim = ACT_VM_RELOAD_END
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOADEMPTY
 --SWEP.SafetyAnim=ACT_VM_FIREMODE
---SWEP.SingleReloadChambers=true
-SWEP.SingleReloadChambers=false
-SWEP.SingleReload=true
-SWEP.HoldOpen=true
-SWEP.IronSightsPos = Vector(-2.81, -7, 1.455)
-SWEP.IronSightsAng = Vector(0, 0, 0)
+SWEP.IronSightsPos = Vector(-2.565, -5, 1.6)
+SWEP.IronSightsAng = Vector(0.3, 0, 0)
 SWEP.ScopeOffsetPos=Vector(0,-5,-1.72)
 SWEP.ScopeOffsetAng=Vector(0,0,0)
 SWEP.InsNoIronAnim=true
 SWEP.MergeAttachments = {
+	clip = "models/weapons/upgrades/a_kar98k_stripper_clip.mdl"
  }
-SWEP.OpticMountModel = "models/weapons/upgrades/a_modkit_mosin.mdl" 
 SWEP.DefaultSight=nil
-SWEP.NoDefaultSightModel=true
+--[[SWEP.HasCustomOptic=true
+SWEP.OpticSight = table.Copy(KswepDefaultSight)
+SWEP.OpticSight.model="models/weapons/upgrades/a_optic_springfield.mdl"
+SWEP.OpticSight.rtscope=true
+SWEP.OpticSight.sensitivity=2.5]]
+SWEP.NoOpticMounting=true
 SWEP.InsAttachments=true
 SWEP.Anims.InitialDrawAnim=ACT_VM_READY
-SWEP.CanFlashlight=true
-SWEP.WaitShot=true
-SWEP.SingleShotChambers=true
-SWEP.TranqMultiplier=1.5
+SWEP.UseDelayForBolt=true
+SWEP.WaitShot=false
 function SWEP:ReloadAct(force)
-	self:ReloadTube()	
+	self:ReloadMag(force)	
 end
 function SWEP:DiscoverModelAnims()
+	self:SetAnim("ReloadAnim",self:DiscoverAnim("ACT_VM_RELOADEMPTY_CLIP"))
+	self:SetAnim("ReloadAnimEmpty",self:DiscoverAnim("ACT_VM_RELOADEMPTY_CLIP"))
 	self:SetAnim("ShootAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_START"))
 	self:SetAnim("IronShootAnim",self:DiscoverAnim("ACT_VM_ISHOOT_START"))
 	self:SetAnim("RunAnim",self:DiscoverAnim("ACT_VM_SPRINT"))
+	self:SetAnim("BoltAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_END"))
+	self:SetAnim("BoltAnimIron",self:DiscoverAnim("ACT_VM_ISHOOT_END"))
 end

@@ -36,10 +36,13 @@ SWEP.MaxMags=2
 SWEP.Primary.Spread = 0.0054
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
-SWEP.DefaultZero=0
-SWEP.DefaultBattlesightZero=300
-SWEP.DefaultMinZero=0
-SWEP.DefaultMaxZero=1000
+SWEP.DefaultZerodata= {
+	min=0,
+	max=1000,
+	step=100,
+	default=0,
+	battlesight=300
+}
 SWEP.DefaultZeroStep=100
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_rpk.mdl"

@@ -36,7 +36,13 @@ SWEP.Primary.Spread = 0.02
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
 SWEP.OpenBolt=false
-SWEP.DefaultZero=25
+SWEP.DefaultZerodata= {
+	min=25,
+	max=25,
+	step=0,
+	default=25,
+	battlesight=false
+}
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_ppk.mdl"
 --SWEP.WorldModel = "models/weapons/w_mk18.mdl"

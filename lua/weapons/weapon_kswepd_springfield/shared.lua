@@ -35,10 +35,13 @@ SWEP.Primary.Delay = 0.3
 SWEP.Primary.Damage = 42
 SWEP.Primary.Spread = 0.003
 SWEP.Spawnable = true
-SWEP.DefaultZero=92*2
-SWEP.DefaultMinZero=92*2
-SWEP.DefaultMaxZero=92*8
-SWEP.DefaultZeroStep=46
+SWEP.DefaultZerodata = {
+	min=92*2,
+	max=92*8,
+	step=46,
+	default=92*2,
+	battlesight=false
+}
 SWEP.MuzzleVelMod=1
 SWEP.ModeName0="SINGLE"
 SWEP.DrawOnce=false

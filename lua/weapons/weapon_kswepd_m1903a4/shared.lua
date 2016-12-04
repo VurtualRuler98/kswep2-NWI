@@ -35,7 +35,13 @@ SWEP.Primary.Delay = 0.3
 SWEP.Primary.Damage = 42
 SWEP.Primary.Spread = 0.003
 SWEP.Spawnable = true
-SWEP.DefaultZero=92
+SWEP.DefaultZerodata = {
+	min=92,
+	max=92,
+	step=0,
+	default=92,
+	battlesight=false
+}
 SWEP.SingleReloadFiringPin=true
 SWEP.ModeName0="SINGLE"
 SWEP.MuzzleVelMod=1

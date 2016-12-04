@@ -33,11 +33,14 @@ SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.09
 SWEP.Primary.Damage = 40
 SWEP.Primary.Spread = 0.001
-SWEP.DefaultZero=200
-SWEP.DefaultBattlesightZero=100
-SWEP.DefaultMinZero=200
-SWEP.DefaultMaxZero=600
-SWEP.DefaultZeroStep=100
+--TODO: verify L1A1 and FAL sights
+SWEP.DefaultZerodata = {
+	min=200,
+	max=600,
+	step=100,
+	default=200,
+	battlesight=false
+}
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
 SWEP.AdminSpawnable = true
