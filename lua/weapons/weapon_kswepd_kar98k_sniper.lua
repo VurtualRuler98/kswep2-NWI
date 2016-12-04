@@ -22,7 +22,7 @@ if (SERVER) then
 end
 
 if (CLIENT) then
-	SWEP.PrintName = "DOI Karabiner 98k"
+	SWEP.PrintName = "DOI Karabiner 98k Sniper"
 	SWEP.Author = "vurtual"
 	SWEP.Slot = 2
 	SWEP.SlotPos = 99
@@ -79,6 +79,8 @@ SWEP.OpenBolt=true
 SWEP.IdleType="passive"
 SWEP.SelectFire=false
 SWEP.MagType="kar98kclip"
+SWEP.SingleClips=true
+SWEP.ReloadClipSize=5
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOAD_INSERT_PULL
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOADEMPTY
 --SWEP.SafetyAnim=ACT_VM_FIREMODE
@@ -93,7 +95,6 @@ SWEP.AltIronOffsetPos=Vector(0,0,-1.2)
 SWEP.AltIronOffsetAng=Vector()
 
 SWEP.MergeAttachments = {
-	clip = "models/weapons/upgrades/a_kar98k_stripper_clip.mdl"
  }
 SWEP.DefaultSight="models/weapons/upgrades/a_optic_kar98k.mdl"
 --[[SWEP.HasCustomOptic=true
@@ -111,12 +112,14 @@ SWEP.InsAttachments=true
 SWEP.Anims.InitialDrawAnim=ACT_VM_READY
 SWEP.UseDelayForBolt=true
 SWEP.WaitShot=false
+SWEP.Anims.StartReloadAnim=ACT_VM_RELOADEMPTY
+SWEP.Anims.MidReloadAnim=ACT_VM_RELOAD_INSERT
+SWEP.Anims.EndReloadAnim=ACT_VM_RELOAD_END
+SWEP.SingleReload=true
 function SWEP:ReloadAct(force)
-	self:ReloadMag(force)	
+	self:ReloadTube()
 end
 function SWEP:DiscoverModelAnims()
-	self:SetAnim("ReloadAnim",self:DiscoverAnim("ACT_VM_RELOADEMPTY_CLIP"))
-	self:SetAnim("ReloadAnimEmpty",self:DiscoverAnim("ACT_VM_RELOADEMPTY_CLIP"))
 	self:SetAnim("ShootAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_START"))
 	self:SetAnim("IronShootAnim",self:DiscoverAnim("ACT_VM_ISHOOT_START"))
 	self:SetAnim("RunAnim",self:DiscoverAnim("ACT_VM_SPRINT"))
