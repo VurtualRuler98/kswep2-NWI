@@ -29,7 +29,7 @@ if (CLIENT) then
 end
 
 SWEP.Anims = SWEP.Anims or {}
-SWEP.Category = "Vurtual's Day of Infamy K-Weapons"
+SWEP.Category = "Vurtual's K-Weapons Primary Automatic Rifles"
 SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.1
 SWEP.Primary.Spread = 0.008
