@@ -70,6 +70,9 @@ SWEP.OpenBolt=true
 SWEP.IdleType="passive"
 SWEP.SelectFire=false
 SWEP.MagType="kar98kclip"
+SWEP.BayonetModel="models/weapons/upgrades/a_kar98k_bayonet.mdl"
+SWEP.BayonetLength=10
+SWEP.BayonetCapable=true
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOAD_INSERT_PULL
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOADEMPTY
 --SWEP.SafetyAnim=ACT_VM_FIREMODE
@@ -103,4 +106,8 @@ function SWEP:DiscoverModelAnims()
 	self:SetAnim("RunAnim",self:DiscoverAnim("ACT_VM_SPRINT"))
 	self:SetAnim("BoltAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_END"))
 	self:SetAnim("BoltAnimIron",self:DiscoverAnim("ACT_VM_ISHOOT_END"))
+	self:SetAnim("Bayonet",self:DiscoverAnim("ACT_VM_MELEE"))
+	self:SetAnim("BayonetEmpty",self:DiscoverAnim("ACT_VM_MELEE_EMPTY"))
+	self:SetAnim("RunBayonet",self:DiscoverAnim("ACT_VM_SPRINT_MELEE"))
+	self:SetAnim("RunBayonetEmpty",self:DiscoverAnim("ACT_VM_SPRING_MELEE_EMPTY"))
 end

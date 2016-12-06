@@ -74,6 +74,9 @@ SWEP.Length=36
 SWEP.LengthSup=10
 SWEP.MuzzleVelModSup= 1.005
 SWEP.RecoilModSup=0.9
+SWEP.BayonetModel="models/weapons/upgrades/a_garand_bayonet.mdl"
+SWEP.BayonetLength=16
+SWEP.BayonetCapable=true
 SWEP.SpreadModSup=-0.0001
 SWEP.IdleType="passive"
 SWEP.SelectFire=false
@@ -107,4 +110,8 @@ end
 function SWEP:DiscoverModelAnims()
 	self.Anims.RunAnim=self:DiscoverAnim("ACT_VM_SPRINT")
 	self.Anims.RunAnimEmpty=self:DiscoverAnim("ACT_VM_SPRINT_EMPTY")
+	self:SetAnim("Bayonet",self:DiscoverAnim("ACT_VM_MELEE"))
+	self:SetAnim("BayonetEmpty",self:DiscoverAnim("ACT_VM_MELEE_EMPTY"))
+	self:SetAnim("RunBayonet",self:DiscoverAnim("ACT_VM_SPRINT_MELEE"))
+	self:SetAnim("RunBayonetEmpty",self:DiscoverAnim("ACT_VM_SPRING_MELEE_EMPTY"))
 end

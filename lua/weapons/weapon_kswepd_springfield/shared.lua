@@ -62,6 +62,9 @@ SWEP.CurrentlyReloading=0
 SWEP.ReloadAnimTime=0
 SWEP.RecoilMassModifier=1
 SWEP.HandlingModifier=180
+SWEP.BayonetModel="models/weapons/upgrades/a_garand_bayonet.mdl"
+SWEP.BayonetLength=16
+SWEP.BayonetCapable=true
 SWEP.InsAnims=true
 SWEP.Auto=false
 SWEP.Firemode=true
@@ -107,4 +110,8 @@ function SWEP:DiscoverModelAnims()
 	self:SetAnim("RunAnim",self:DiscoverAnim("ACT_VM_SPRINT"))
 	self:SetAnim("BoltAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_END"))
 	self:SetAnim("BoltAnimIron",self:DiscoverAnim("ACT_VM_ISHOOT_END"))
+	self:SetAnim("Bayonet",self:DiscoverAnim("ACT_VM_MELEE"))
+	self:SetAnim("BayonetEmpty",self:DiscoverAnim("ACT_VM_MELEE_EMPTY"))
+	self:SetAnim("RunBayonet",self:DiscoverAnim("ACT_VM_SPRINT_MELEE"))
+	self:SetAnim("RunBayonetEmpty",self:DiscoverAnim("ACT_VM_SPRING_MELEE_EMPTY"))
 end

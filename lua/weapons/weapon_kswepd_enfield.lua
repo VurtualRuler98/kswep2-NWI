@@ -96,6 +96,9 @@ SWEP.WaitShot=false
 SWEP.Anims.StartReloadAnim=ACT_VM_RELOADEMPTY
 SWEP.Anims.MidReloadAnim=ACT_VM_RELOAD_INSERT
 SWEP.Anims.EndReloadAnim=ACT_VM_RELOAD_END
+SWEP.BayonetModel="models/weapons/upgrades/a_enfield_bayonet.mdl"
+SWEP.BayonetLength=10
+SWEP.BayonetCapable=true
 function SWEP:ReloadAct(force)
 	self:ReloadTube()	
 end
@@ -105,4 +108,8 @@ function SWEP:DiscoverModelAnims()
 	self:SetAnim("RunAnim",self:DiscoverAnim("ACT_VM_SPRINT"))
 	self:SetAnim("BoltAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_END"))
 	self:SetAnim("BoltAnimIron",self:DiscoverAnim("ACT_VM_ISHOOT_END"))
+	self:SetAnim("Bayonet",self:DiscoverAnim("ACT_VM_MELEE"))
+	self:SetAnim("BayonetEmpty",self:DiscoverAnim("ACT_VM_MELEE_EMPTY"))
+	self:SetAnim("RunBayonet",self:DiscoverAnim("ACT_VM_SPRINT_MELEE"))
+	self:SetAnim("RunBayonetEmpty",self:DiscoverAnim("ACT_VM_SPRING_MELEE_EMPTY"))
 end
