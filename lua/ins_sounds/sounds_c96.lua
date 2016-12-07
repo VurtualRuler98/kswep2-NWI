@@ -13,9 +13,9 @@ sound.Add({
 sound.Add({
 	name="Weapon_C96wtf.Single",
 	volume = 1.0,
-	pitch = {75,85},
+	pitch = {145,155},
 	sound = ")weapons/c96carbine/c96carbine_fp.wav",
-	level = 150,
+	level = 140,
 	channel = CHAN_STATIC
 })
 sound.Add({

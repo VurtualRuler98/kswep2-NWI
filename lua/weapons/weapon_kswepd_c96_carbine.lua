@@ -22,7 +22,7 @@ if (SERVER) then
 end
 
 if (CLIENT) then
-	SWEP.PrintName = "DOI 10mm C96 Monstrosity"
+	SWEP.PrintName = "DOI .22LR C96 Monstrosity"
 	SWEP.Author = "vurtual"
 	SWEP.Slot = 2
 	SWEP.SlotPos = 0
@@ -52,8 +52,8 @@ SWEP.UseHands = false
 SWEP.MagSize = 40 --why not?
 SWEP.MaxMags=4
 SWEP.Primary.ClipSize = SWEP.MagSize
-SWEP.Caliber = "vammo_10mm_FMJ" --wheeee
-SWEP.Primary.Sound = Sound("Weapon_c96wtf.Single") --LOUDER
+SWEP.Caliber = "vammo_22_ball" --wheeee
+SWEP.Primary.Sound = Sound("Weapon_c96wtf.Single")
 SWEP.ViewModelFlip = false
 SWEP.Secondary.Ammo = ""
 SWEP.CurrentlyReloading=0
@@ -61,7 +61,7 @@ SWEP.ReloadAnimTime=0
 SWEP.InsAnims=true
 SWEP.Auto=false
 SWEP.Firemode=true
-SWEP.HoldType="pistol"
+SWEP.HoldType="ar2"
 SWEP.HoldOpen=true
 SWEP.Length=6
 SWEP.IdleType="normal"
@@ -97,7 +97,7 @@ end
 SWEP.Primary.Spread = 0.011
 SWEP.HandlingModifier=300
 SWEP.RecoilMassModifier=1
-SWEP.MuzzleVelMod=1.3
+SWEP.MuzzleVelMod=1.2
 SWEP.ZeroVelocity=vurtual_ammodata[SWEP.Caliber].velocity*SWEP.MuzzleVelMod
 SWEP.MergeAttachments = {
 	mag = "models/weapons/upgrades/a_magazine_c96_40.mdl",
