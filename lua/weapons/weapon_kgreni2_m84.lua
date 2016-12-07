@@ -8,7 +8,7 @@ if (CLIENT) then
 	SWEP.SlotPos = 0
 end
 SWEP.Base="weapon_kgren_base"
-SWEP.Category = "Vurtual's K-Weapons Grenades"
+SWEP.Category = "KSwep Grenades"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_m84.mdl"

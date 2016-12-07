@@ -10,7 +10,7 @@ end
 SWEP.Base="weapon_kweps_detonator"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
-SWEP.Category="Vurtual's K-Weapons Equipment"
+SWEP.Category="KSwep Equipment"
 SWEP.ViewModel = "models/weapons/v_c4_sec.mdl"
 SWEP.WorldModel = "models/weapons/w_slam.mdl"
 SWEP.UseInsHands=true

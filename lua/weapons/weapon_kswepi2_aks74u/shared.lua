@@ -28,7 +28,7 @@ if (CLIENT) then
 	SWEP.SlotPos = 0
 end
 SWEP.Anims = SWEP.Anims or {}
-SWEP.Category = "Vurtual's K-Weapons Primary Automatic Rifles"
+SWEP.Category = "KSwep Auto"
 SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.092
 SWEP.Primary.Damage = 25
