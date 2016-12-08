@@ -18,11 +18,11 @@ limitations under the License.
 
 
 if (SERVER) then
-	AddCSLuaFile("shared.lua")
+	AddCSLuaFile()
 end
 
 if (CLIENT) then
-	SWEP.PrintName = "DOI Sten"
+	SWEP.PrintName = "DOI Sten Mk VI"
 	SWEP.Author = "vurtual"
 	SWEP.Slot = 2
 	SWEP.SlotPos = 0
@@ -31,7 +31,6 @@ SWEP.Anims = SWEP.Anims or {}
 SWEP.Category = "KSwep Primary"
 SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.1
-SWEP.Primary.Damage = 8
 SWEP.Primary.Spread = 0.007
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
@@ -44,32 +43,32 @@ SWEP.DefaultZerodata = {
 	battlesight=false
 }
 SWEP.AdminSpawnable = true
-SWEP.ViewModel = "models/weapons/v_sten.mdl"
+SWEP.ViewModel = "models/weapons/v_sten_mk5.mdl"
 --SWEP.WorldModel = "models/weapons/w_mk18.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
-SWEP.FlashlightModel="models/weapons/upgrades/a_flashlight_band.mdl"
-SWEP.LaserModel="models/weapons/upgrades/a_laser_band.mdl"
 SWEP.LoweredOffset = 2
 SWEP.UseHands = false
 SWEP.MagazineCount = 4
-SWEP.MuzzleVelMod=1
+SWEP.MuzzleVelMod=0.8
 SWEP.MagSize = 32
 SWEP.Primary.ClipSize = SWEP.MagSize
 SWEP.Caliber = "vammo_9x19_FMJ"
-SWEP.Primary.Sound = Sound("Weapon_Sten.Single")
+SWEP.Primary.Sound = Sound("Weapon_Sten.SingleSilenced")
+SWEP.Primary.SoundEmpty = Sound("Weapon_Sten.Empty")
+SWEP.Primary.SoundSup = Sound("Weapon_Sten.SingleSilenced")
 SWEP.ViewModelFlip = false
 SWEP.Secondary.Ammo = ""
 SWEP.CurrentlyReloading=0
 SWEP.ReloadAnimTime=0
-SWEP.RecoilMassModifier=1
-SWEP.HandlingModifier=300
+SWEP.RecoilMassModifier=3.7
+SWEP.HandlingModifier=250
 SWEP.InsAnims=true
 SWEP.Auto=true
 SWEP.Firemode=true
 SWEP.ModeName0="AUTO"
 SWEP.HoldType="ar2"
 SWEP.HoldOpen=false --TODO find out if this is true
-SWEP.Length=30
+SWEP.Length=35 --TODO verify
 SWEP.LengthSup=10
 SWEP.MuzzleVelModSup= 1.005
 SWEP.RecoilModSup=0.9
@@ -84,11 +83,16 @@ SWEP.Anims.ShootLastIronAnim=ACT_VM_ISHOOT_LAST
 SWEP.Anims.LowerAnimEmpty=ACT_VM_DOWN_EMPTY
 SWEP.Anims.StowAnimEmpty=ACT_VM_HOLSTER_EMTPY
 SWEP.Anims.UnstowAnimEmpty=ACT_VM_DRAW_EMPTY
-SWEP.IronSightsPos = Vector(-2.35, -2, 1.7)
-SWEP.IronSightsAng = Vector(-0.2, 0, 7)
+SWEP.IronSightsPos = Vector(-2.615, -2, 2)
+SWEP.IronSightsAng = Vector(-0.2, -0.23, 9)
 SWEP.InsNoIronAnim=true
 SWEP.MergeAttachments = {
+	stock = "models/weapons/upgrades/a_stenmk5_stock_standard.mdl",
+	barrel = "models/weapons/upgrades/a_stenmk5_silencer.mdl"
  }
+--SWEP.NotSuppressorModel="models/weapons/upgrades/a_stenmk2_barrel_standard.mdl"
+SWEP.Suppressable=false
+--SWEP.SuppressorModel="models/weapons/upgrades/a_stenmk2_silencer.mdl"
 --SWEP.OpticMountModel = "models/weapons/upgrades/a_modkit_m1a1.mdl" 
 --SWEP.NotOpticMountModel = "models/weapons/upgrades/a_standard_m1a1.mdl"
 SWEP.DefaultSight=nil

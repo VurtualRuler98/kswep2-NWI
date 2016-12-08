@@ -11,6 +11,14 @@ sound.Add({
 	channel = CHAN_STATIC
 })
 sound.Add({
+	name="Weapon_Sten.SingleSilenced",
+	volume = 1.0,
+	pitch = {95,105},
+	sound = "weapons/Sten/Sten_suppressed_fp.wav",
+	level = 80,
+	channel = CHAN_STATIC
+})
+sound.Add({
 	name="Weapon_Sten.Magrelease",
 	volume = 0.2,
 	sound = "weapons/Sten/handling/Sten_magrelease.wav",
