@@ -90,6 +90,9 @@ SWEP.MergeAttachments = {
 	stock = "models/weapons/upgrades/a_stenmk5_stock_standard.mdl",
 	barrel = "models/weapons/upgrades/a_stenmk5_barrel_standard.mdl"
  }
+SWEP.BayonetModel="models/weapons/upgrades/a_enfield_bayonet.mdl"
+SWEP.BayonetLength=10
+SWEP.BayonetCapable=true
 --SWEP.NotSuppressorModel="models/weapons/upgrades/a_stenmk2_barrel_standard.mdl"
 SWEP.Suppressable=false
 --SWEP.SuppressorModel="models/weapons/upgrades/a_stenmk2_silencer.mdl"
@@ -104,6 +107,10 @@ function SWEP:ReloadAct(force)
 	self:ReloadMag(force)	
 end
 function SWEP:DiscoverModelAnims()
-	self.Anims.RunAnim=self:DiscoverAnim("ACT_VM_SPRINT")
-	self.Anims.RunAnimEmpty=self:DiscoverAnim("ACT_VM_SPRINT_EMPTY")
+	self:SetAnim("RunAnim",self:DiscoverAnim("ACT_VM_SPRINT"))
+	self:SetAnim("RunAnimEmpty",self:DiscoverAnim("ACT_VM_SPRINT_EMPTY"))
+	self:SetAnim("Bayonet",self:DiscoverAnim("ACT_VM_MELEE"))
+	self:SetAnim("BayonetEmpty",self:DiscoverAnim("ACT_VM_MELEE_EMPTY"))
+	self:SetAnim("RunBayonet",self:DiscoverAnim("ACT_VM_SPRINT_MELEE"))
+	self:SetAnim("RunBayonetEmpty",self:DiscoverAnim("ACT_VM_SPRING_MELEE_EMPTY"))
 end
