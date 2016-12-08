@@ -29,7 +29,7 @@ if (CLIENT) then
 end
 
 SWEP.Anims = SWEP.Anims or {}
-SWEP.Category = "KSwep Rifle"
+SWEP.Category = "KSwep Primary"
 SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.3
 SWEP.Primary.Damage = 42
