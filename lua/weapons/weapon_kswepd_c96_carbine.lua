@@ -98,7 +98,6 @@ SWEP.Primary.Spread = 0.011
 SWEP.HandlingModifier=300
 SWEP.RecoilMassModifier=1
 SWEP.MuzzleVelMod=1.2
-SWEP.ZeroVelocity=vurtual_ammodata[SWEP.Caliber].velocity*SWEP.MuzzleVelMod
 SWEP.MergeAttachments = {
 	mag = "models/weapons/upgrades/a_magazine_c96_40.mdl",
 	stock = "models/weapons/upgrades/a_stock_c96.mdl",
