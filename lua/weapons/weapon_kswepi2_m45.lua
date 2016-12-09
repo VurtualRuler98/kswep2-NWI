@@ -77,6 +77,9 @@ SWEP.Auto=false
 SWEP.Firemode=true
 SWEP.HoldType="pistol"
 SWEP.HoldOpen=true
+SWEP.MergeAttachments={
+	mag = "models/weapons/upgrades/a_magazine_m45_8.mdl"
+}
 SWEP.CanFlashlight=true
 SWEP.IdleType="normal"
 SWEP.SelectFire=false
