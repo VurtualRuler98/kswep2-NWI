@@ -93,9 +93,12 @@ SWEP.InsAttachments=true
 SWEP.Anims.InitialDrawAnim=ACT_VM_READY
 SWEP.UseDelayForBolt=true
 SWEP.WaitShot=false
-SWEP.Anims.StartReloadAnim=ACT_VM_RELOADEMPTY
 SWEP.Anims.MidReloadAnim=ACT_VM_RELOAD_INSERT
 SWEP.Anims.EndReloadAnim=ACT_VM_RELOAD_END
+SWEP.Anims.IdleAnimEmpty=ACT_VM_IDLE_EMPTY
+SWEP.Anims.ReloadSingleClip=ACT_VM_RELOAD
+SWEP.Anims.ReloadDoubleClip=ACT_VM_RELOADEMPTY
+SWEP.SingleReloadFiringPin=true
 SWEP.BayonetModel="models/weapons/upgrades/a_enfield_bayonet.mdl"
 SWEP.BayonetLength=10
 SWEP.BayonetCapable=true
@@ -104,10 +107,13 @@ function SWEP:ReloadAct(force)
 end
 function SWEP:DiscoverModelAnims()
 	self:SetAnim("ShootAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_START"))
+	self:SetAnim("StartReloadAnim",self:DiscoverAnim("ACT_VM_RELOAD_START_EMPTY"))
 	self:SetAnim("IronShootAnim",self:DiscoverAnim("ACT_VM_ISHOOT_START"))
 	self:SetAnim("RunAnim",self:DiscoverAnim("ACT_VM_SPRINT"))
 	self:SetAnim("BoltAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_END"))
 	self:SetAnim("BoltAnimIron",self:DiscoverAnim("ACT_VM_ISHOOT_END"))
+	self:SetAnim("Bash",self:DiscoverAnim("ACT_VM_MELEE_BASH"))
+	self:SetAnim("BashEmpty",self:DiscoverAnim("ACT_VM_MELEE_BASH_EMPTY"))
 	self:SetAnim("Bayonet",self:DiscoverAnim("ACT_VM_MELEE"))
 	self:SetAnim("BayonetEmpty",self:DiscoverAnim("ACT_VM_MELEE_EMPTY"))
 	self:SetAnim("RunBayonet",self:DiscoverAnim("ACT_VM_SPRINT_MELEE"))
