@@ -112,16 +112,21 @@ SWEP.InsAttachments=true
 SWEP.Anims.InitialDrawAnim=ACT_VM_READY
 SWEP.UseDelayForBolt=true
 SWEP.WaitShot=false
-SWEP.Anims.StartReloadAnim=ACT_VM_RELOADEMPTY
 SWEP.Anims.MidReloadAnim=ACT_VM_RELOAD_INSERT
 SWEP.Anims.EndReloadAnim=ACT_VM_RELOAD_END
+SWEP.Anims.IdleAnimEmpty=ACT_VM_IDLE_EMPTY
 SWEP.SingleReload=true
+SWEP.EmptyAnims=true
+SWEP.SingleReloadFiringPin=true
 function SWEP:ReloadAct(force)
 	self:ReloadTube()
 end
 function SWEP:DiscoverModelAnims()
+	self:SetAnim("StartReloadAnim",self:DiscoverAnim("ACT_VM_RELOAD_START_EMPTY"))
 	self:SetAnim("ShootAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_START"))
 	self:SetAnim("IronShootAnim",self:DiscoverAnim("ACT_VM_ISHOOT_START"))
+	self:SetAnim("Bash",self:DiscoverAnim("ACT_VM_MELEE_BASH"))
+	self:SetAnim("BashEmpty",self:DiscoverAnim("ACT_VM_MELEE_BASH_EMPTY"))
 	self:SetAnim("RunAnim",self:DiscoverAnim("ACT_VM_SPRINT"))
 	self:SetAnim("BoltAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_END"))
 	self:SetAnim("BoltAnimIron",self:DiscoverAnim("ACT_VM_ISHOOT_END"))

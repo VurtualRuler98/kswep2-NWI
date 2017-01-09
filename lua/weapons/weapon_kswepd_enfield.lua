@@ -98,12 +98,14 @@ SWEP.WaitShot=false
 SWEP.Anims.MidReloadAnim=ACT_VM_RELOAD_INSERT
 SWEP.Anims.EndReloadAnim=ACT_VM_RELOAD_END
 SWEP.Anims.IdleAnimEmpty=ACT_VM_IDLE_EMPTY
+SWEP.Anims.IronAnimEmpty=ACT_VM_IIDLE_EMPTY
 SWEP.Anims.ReloadSingleClip=ACT_VM_RELOAD
 SWEP.Anims.ReloadDoubleClip=ACT_VM_RELOADEMPTY
 SWEP.SingleReloadFiringPin=true
 SWEP.BayonetModel="models/weapons/upgrades/a_enfield_bayonet.mdl"
 SWEP.BayonetLength=10
 SWEP.BayonetCapable=true
+SWEP.EmptyAnims=true
 function SWEP:ReloadAct(force)
 	self:ReloadClip()	
 end
