@@ -72,6 +72,8 @@ SWEP.IdleType="passive"
 SWEP.SelectFire=false
 SWEP.SingleClips=true
 SWEP.ReloadClipSize=5
+SWEP.ClipReload=true
+SWEP.ReloadTwoClips=true
 SWEP.MagType="enfieldclip"
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOAD_INSERT_PULL
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOADEMPTY
@@ -103,7 +105,7 @@ SWEP.BayonetModel="models/weapons/upgrades/a_enfield_bayonet.mdl"
 SWEP.BayonetLength=10
 SWEP.BayonetCapable=true
 function SWEP:ReloadAct(force)
-	self:ReloadTube()	
+	self:ReloadClip()	
 end
 function SWEP:DiscoverModelAnims()
 	self:SetAnim("ShootAnim",self:DiscoverAnim("ACT_VM_PRIMARYATTACK_START"))
