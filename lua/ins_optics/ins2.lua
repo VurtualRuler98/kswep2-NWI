@@ -22,6 +22,7 @@ end
 	def.coltex=nil
 	def.colsize=0
 	def.zero={
+		mils=false,
 		min=100,
 		max=100,
 		step=0,
@@ -29,6 +30,7 @@ end
 		battlesight=false
 	}
 	def.zeroalt={
+		mils=false,
 		min=100,
 		max=100,
 		step=0,
@@ -43,6 +45,8 @@ end
 	def.reticle=false
 	def.retoverride=false
 	def.retzoom=0
+	def.retzoommax=0
+	def.retzoommin=0
 	def.zerovel=0
 	AddKswepScope(def)
 	local tbl = table.Copy(def)
@@ -55,6 +59,7 @@ end
 	tbl.IronPos = Vector(0,0,-0.1)
 	tbl.IronAng = Vector(0,0,0)
 	tbl.zeroalt={
+		mils=false,
 		min=100,
 		max=100,
 		step=0,
@@ -75,6 +80,7 @@ end
 	tbl.fovsteps = 1
 	tbl.rtscope = true
 	tbl.zeroalt={
+		mils=false,
 		min=100,
 		max=100,
 		step=0,
@@ -104,6 +110,7 @@ end
 	tbl.model ="models/weapons/upgrades/a_optic_po4x24.mdl"
 	tbl.fov = 6
 	tbl.zero={
+		mils=false,
 		min=400,
 		max=400,
 		step=0,
@@ -121,6 +128,7 @@ end
 	tbl.model ="models/weapons/upgrades/a_optic_po4x24.mdl"
 	tbl.fov = 15
 	tbl.zero={
+		mils=false,
 		min=0,
 		max=2000,
 		step=100,
@@ -146,6 +154,7 @@ end
 	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
 	tbl.fov = 1.94
 	tbl.zero={
+		mils=false,
 		min=100,
 		max=2000,
 		step=50,
@@ -166,6 +175,7 @@ end
 	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
 	tbl.fov = 1.09
 	tbl.zero={
+		mils=false,
 		min=100,
 		max=1000,
 		step=100,
@@ -183,9 +193,10 @@ end
 	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
 	tbl.fov = 2.4
 	tbl.zero={
-		min=100,
-		max=800,
-		step=25,
+		mils=10,
+		min=-80,
+		max=80,
+		step=1,
 		default=100,
 		battlesight=false
 	}
@@ -198,14 +209,13 @@ end
 	tbl.IronAng = Vector(0,0,0)
 	tbl.sensitivity=9
 	tbl.minsensitivity=3
-	tbl.reticle="materials/kswep/ret_mil.png"
-	tbl.retzoom=9
 	tbl.retoverride="models/weapons/optics/mk4_crosshair"
 	AddKswepScope(tbl)
 	tbl.name = "7x scope"
 	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
 	tbl.fov = 3.3
 	tbl.zero={
+		mils=false,
 		min=100,
 		max=2000,
 		step=100,
@@ -226,6 +236,7 @@ end
 	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
 	tbl.fov = 4.5
 	tbl.zero={
+		mils=false,
 		min=100,
 		max=800,
 		step=25,
@@ -241,10 +252,12 @@ end
 	tbl.IronAng = Vector(0,0,0)
 	tbl.sensitivity=5
 	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
 	tbl.name = "7x scope"
 	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
 	tbl.fov = 3.3
 	tbl.zero={
+		mils=false,
 		min=100,
 		max=2000,
 		step=100,
@@ -260,10 +273,37 @@ end
 	tbl.IronAng = Vector(0,0,0)
 	tbl.sensitivity=7
 	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
+	tbl.name = "~ 4-12x mil scope"
+	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
+	tbl.fov = 2
+	tbl.zero={
+		mils=10,
+		min=-100,
+		max=100,
+		step=1,
+		default=100,
+		battlesight=false
+	}
+	tbl.fovmax = 6
+	tbl.fovmin = 2
+	tbl.fovsteps = 8
+	tbl.rtscope = true
+	tbl.rtmat = "models/weapons/optics/lense_rt"
+	tbl.reticle="materials/kswep/ret_mil.png"
+	tbl.retzoom=12
+	tbl.retzoommax=12
+	tbl.retzoommin=48 --for some reason this is required? TODO fix
+	tbl.IronPos = Vector(0,0,0.7)
+	tbl.IronAng = Vector(0,0,0)
+	tbl.sensitivity=12
+	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
 	tbl.name = "~ 4x scope"
 	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
 	tbl.fov = 6
 	tbl.zero={
+		mils=false,
 		min=100,
 		max=2000,
 		step=100,
@@ -277,10 +317,12 @@ end
 	tbl.IronAng = Vector(0,0,0)
 	tbl.sensitivity=4
 	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
 	tbl.name = "~ M91/30 PU 7N1"
 	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
 	tbl.fov = 6
 	tbl.zero={
+		mils=false,
 		min=100,
 		max=1300,
 		step=100,
@@ -299,6 +341,7 @@ end
 	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
 	tbl.fov = 3.3
 	tbl.zero={
+		mils=false,
 		min=100,
 		max=2000,
 		step=100,
