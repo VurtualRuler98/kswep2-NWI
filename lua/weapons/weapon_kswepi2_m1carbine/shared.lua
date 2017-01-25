@@ -51,6 +51,7 @@ SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.FlashlightModel="models/weapons/upgrades/a_flashlight_band.mdl"
 SWEP.LaserModel="models/weapons/upgrades/a_laser_band.mdl"
 SWEP.LoweredOffset = 2
+SWEP.IronSightHeight=1
 SWEP.UseHands = false
 SWEP.MagazineCount = 4
 SWEP.MuzzleVelMod=1.02

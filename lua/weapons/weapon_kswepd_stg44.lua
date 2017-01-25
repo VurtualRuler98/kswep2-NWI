@@ -30,6 +30,7 @@ end
 
 SWEP.Anims = SWEP.Anims or {}
 SWEP.Category = "KSwep Auto"
+SWEP.IronSightHeight=2.5 --from an article about a 22
 SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.1
 SWEP.Primary.Spread = 0.008

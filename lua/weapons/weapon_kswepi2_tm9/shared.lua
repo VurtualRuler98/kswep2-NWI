@@ -29,6 +29,7 @@ if (CLIENT) then
 end
 
 SWEP.Anims = SWEP.Anims or {}
+SWEP.IronSightHeight=0.5
 SWEP.Category = "KSwep Special"
 SWEP.Base = "weapon_kswep_tranqbase"
 SWEP.Primary.Delay = 0.2

@@ -42,6 +42,7 @@ SWEP.DefaultZerodata = {
 	battlesight=false
 }
 SWEP.Primary.Spread = 0.001
+SWEP.IronSightHeight=1.1
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
 SWEP.FlashlightModel="models/weapons/upgrades/a_flashlight_rail.mdl"

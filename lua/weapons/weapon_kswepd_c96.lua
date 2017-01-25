@@ -30,6 +30,7 @@ end
 SWEP.Anims = SWEP.Anims or {}
 SWEP.Category = "KSwep Secondary"
 SWEP.Base = "weapon_kswep"
+SWEP.IronSightHeight=0.5 --wild guess
 SWEP.Primary.Delay = 0.1
 SWEP.Primary.Damage = 7
 SWEP.Primary.Spread = 0.014

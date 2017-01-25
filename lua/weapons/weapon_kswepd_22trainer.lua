@@ -84,6 +84,7 @@ SWEP.Anims.EndReloadAnim = ACT_VM_RELOAD_END
 --SWEP.SingleReloadChambers=true
 SWEP.SingleReload=true
 SWEP.IronSightsPos = Vector(-2.565, -3, 1.31)
+SWEP.IronSightHeight=1.065
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.ScopeOffsetPos=Vector(0,-5,-1.72)
 SWEP.ScopeOffsetAng=Vector(0,0,0)

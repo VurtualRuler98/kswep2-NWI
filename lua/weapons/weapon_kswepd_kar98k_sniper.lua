@@ -85,6 +85,7 @@ SWEP.SelectFire=false
 SWEP.MagType="kar98kclip"
 SWEP.SingleClips=true
 SWEP.ReloadClipSize=5
+SWEP.IronSightHeight=1
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOAD_INSERT_PULL
 --SWEP.MidReloadAnimEmpty=ACT_VM_RELOADEMPTY
 --SWEP.SafetyAnim=ACT_VM_FIREMODE

@@ -47,6 +47,7 @@ SWEP.DefaultZerodata = {
 SWEP.MuzzleVelMod=1
 SWEP.ModeName0="SINGLE"
 SWEP.DrawOnce=false
+SWEP.IronSightHeight=1.065
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_springfield_doi.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"

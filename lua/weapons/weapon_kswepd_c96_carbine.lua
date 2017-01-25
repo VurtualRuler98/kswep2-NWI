@@ -29,6 +29,7 @@ if (CLIENT) then
 end
 SWEP.Anims = SWEP.Anims or {}
 SWEP.Category = "KSwep Auto"
+SWEP.IronSightHeight=0.5
 SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.06 --M712 fire rate?
 SWEP.Primary.Damage = 7

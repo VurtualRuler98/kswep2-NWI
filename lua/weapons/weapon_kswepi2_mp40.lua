@@ -29,6 +29,7 @@ if (CLIENT) then
 end
 SWEP.Anims = SWEP.Anims or {}
 SWEP.Category = "KSwep Auto"
+SWEP.IronSightHeight=1 --wild guess
 SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.11
 SWEP.Primary.Spread = 0.007

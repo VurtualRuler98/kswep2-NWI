@@ -35,6 +35,7 @@ SWEP.Primary.Damage = 25
 SWEP.Primary.Spread = 0.0045
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
+SWEP.IronSightHeight=2
 SWEP.DefaultZerodata = {
 	mils=false,
 	bc=0.338,

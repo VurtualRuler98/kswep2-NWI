@@ -32,6 +32,7 @@ SWEP.Anims = SWEP.Anims or {}
 SWEP.Category = "KSwep Primary"
 SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.3
+SWEP.IronSightHeight=2.8
 SWEP.Primary.Damage = 40
 SWEP.Primary.Spread = 0.0021
 SWEP.Spawnable = true

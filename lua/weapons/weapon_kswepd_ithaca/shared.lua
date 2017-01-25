@@ -54,6 +54,7 @@ SWEP.MagSize = 5
 SWEP.MaxMags = 20
 SWEP.Primary.ClipSize = SWEP.MagSize
 SWEP.Caliber = "vammo_12gauge_00buck"
+SWEP.IronSightHeight=0.625
 SWEP.Primary.Sound = Sound("Weapon_ithaca.Single")
 SWEP.ViewModelFlip = false
 SWEP.Secondary.Ammo = ""

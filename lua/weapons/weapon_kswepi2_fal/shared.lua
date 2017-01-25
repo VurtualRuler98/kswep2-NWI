@@ -33,6 +33,7 @@ SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.09
 SWEP.Primary.Damage = 40
 SWEP.Primary.Spread = 0.001
+SWEP.IronSightHeight=2
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
 SWEP.DefaultZerodata = {

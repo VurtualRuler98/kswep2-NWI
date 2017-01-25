@@ -31,6 +31,7 @@ end
 SWEP.Anims = SWEP.Anims or {}
 SWEP.Category = "KSwep Auto"
 SWEP.Base = "weapon_kswep"
+SWEP.IronSightHeight=2.8
 SWEP.Primary.Delay = 0.08
 SWEP.FlashlightModel="models/weapons/upgrades/a_flashlight_rail.mdl"
 SWEP.LaserModel="models/weapons/upgrades/a_laser_rail.mdl"

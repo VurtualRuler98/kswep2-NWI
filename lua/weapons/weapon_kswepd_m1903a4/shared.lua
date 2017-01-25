@@ -60,6 +60,7 @@ SWEP.Primary.Sound = Sound("Weapon_springfield.Single")
 SWEP.Primary.SoundSup = Sound("Weapon_springfield.SingleSilenced")
 SWEP.Primary.SoundEmpty = Sound("weapon_springfield.Empty")
 SWEP.ViewModelFlip = false
+SWEP.IronSightHeight=1.065
 SWEP.Secondary.Ammo = ""
 SWEP.CurrentlyReloading=0
 SWEP.ReloadAnimTime=0

@@ -28,6 +28,7 @@ if (CLIENT) then
 	SWEP.SlotPos = 0
 end
 SWEP.Anims=SWEP.Anims or {}
+SWEP.IronSightHeight=1
 SWEP.Category = "KSwep Special"
 SWEP.Base = "weapon_kswep_tranqbase"
 SWEP.Primary.Delay = 0.8
