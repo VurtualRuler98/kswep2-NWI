@@ -37,7 +37,7 @@ SWEP.Primary.Spread = 0.003
 SWEP.Spawnable = true
 SWEP.DefaultZerodata = {
 	mils=false,
-	bc=0.411,
+	bc=0.498,
 	min=100,
 	max=2000,
 	step=100,
@@ -46,7 +46,7 @@ SWEP.DefaultZerodata = {
 }
 SWEP.SingleReloadFiringPin=true
 SWEP.DefaultZeroStep=100
-SWEP.MuzzleVelMod=1.04
+SWEP.MuzzleVelMod=1
 SWEP.DrawOnce=false
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_mosin.mdl"

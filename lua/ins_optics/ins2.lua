@@ -23,6 +23,7 @@ end
 	def.colsize=0
 	def.zero={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=100,
 		step=0,
@@ -31,6 +32,7 @@ end
 	}
 	def.zeroalt={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=100,
 		step=0,
@@ -60,6 +62,7 @@ end
 	tbl.IronAng = Vector(0,0,0)
 	tbl.zeroalt={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=100,
 		step=0,
@@ -81,6 +84,7 @@ end
 	tbl.rtscope = true
 	tbl.zeroalt={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=100,
 		step=0,
@@ -111,6 +115,7 @@ end
 	tbl.fov = 6
 	tbl.zero={
 		mils=false,
+		bc=-1,
 		min=400,
 		max=400,
 		step=0,
@@ -129,6 +134,7 @@ end
 	tbl.fov = 15
 	tbl.zero={
 		mils=false,
+		bc=-1,
 		min=0,
 		max=2000,
 		step=100,
@@ -155,6 +161,7 @@ end
 	tbl.fov = 1.94
 	tbl.zero={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=2000,
 		step=50,
@@ -176,6 +183,7 @@ end
 	tbl.fov = 1.09
 	tbl.zero={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=1000,
 		step=100,
@@ -194,6 +202,7 @@ end
 	tbl.fov = 2.4
 	tbl.zero={
 		mils=10,
+		bc=-1,
 		min=-80,
 		max=80,
 		step=1,
@@ -216,6 +225,7 @@ end
 	tbl.fov = 3.3
 	tbl.zero={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=2000,
 		step=100,
@@ -237,6 +247,7 @@ end
 	tbl.fov = 4.5
 	tbl.zero={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=800,
 		step=25,
@@ -258,6 +269,7 @@ end
 	tbl.fov = 3.3
 	tbl.zero={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=2000,
 		step=100,
@@ -279,6 +291,7 @@ end
 	tbl.fov = 2
 	tbl.zero={
 		mils=10,
+		bc=-1,
 		min=-100,
 		max=100,
 		step=1,
@@ -304,6 +317,7 @@ end
 	tbl.fov = 6
 	tbl.zero={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=2000,
 		step=100,
@@ -343,6 +357,7 @@ end
 	tbl.fov = 3.3
 	tbl.zero={
 		mils=false,
+		bc=-1,
 		min=100,
 		max=2000,
 		step=100,
