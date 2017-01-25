@@ -47,7 +47,7 @@ SWEP.DefaultZerodata = {
 }
 SWEP.MuzzleVelMod=1.04
 SWEP.DrawOnce=false
-SWEP.SingleReloadFiringPin=true
+SWEP.SingleReloadFiringPin=false
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_mosin.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -107,6 +107,11 @@ SWEP.CanFlashlight=true
 SWEP.WaitShot=true
 SWEP.SingleShotChambers=true
 SWEP.TranqMultiplier=1.5
+SWEP.Anims.ShootLastAnim=ACT_VM_SHOOTLAST
+SWEP.Anims.IronShootLastAnim=ACT_VM_ISHOOT_LAST
+SWEP.EmptyAnims=true
+SWEP.Anims.IdleAnimEmpty=ACT_VM_IDLE_EMPTY
+SWEP.Anims.IronAnimEmpty=ACT_VM_IIDLE_EMPTY
 function SWEP:ReloadAct(force)
 	self:ReloadTube()	
 end
