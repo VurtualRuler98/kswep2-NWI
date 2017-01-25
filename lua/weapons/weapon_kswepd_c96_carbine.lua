@@ -37,11 +37,13 @@ SWEP.DrawOnce=false
 SWEP.MaxRecoil=8
 SWEP.OpenBolt=false
 SWEP.DefaultZerodata= {
+	mils=false,
+	bc=0.125, --remington golden bullet 22
 	min=1,
 	max=14,
 	step=1,
 	default=1,
-	battlesight=false
+	battlesight=false,
 }
 SWEP.DefaultZeroTable={50,100,150,200,250,300,350,400,450,500,600,700,800,1000}
 SWEP.AdminSpawnable = true

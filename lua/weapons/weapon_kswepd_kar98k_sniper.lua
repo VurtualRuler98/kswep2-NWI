@@ -36,6 +36,8 @@ SWEP.Primary.Spread = 0.003
 SWEP.Spawnable = true
 SWEP.DefaultZero=100
 SWEP.DefaultZerodata = {
+	mils=false,
+	bc=0.559,
 	min=100,
 	max=2000,
 	step=100,
@@ -43,6 +45,8 @@ SWEP.DefaultZerodata = {
 	battlesight=false
 }
 SWEP.DefaultZerodataAlt = {
+	mils=false,
+	bc=0.559,
 	min=100,
 	max=800,
 	step=50,

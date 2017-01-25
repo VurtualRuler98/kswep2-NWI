@@ -323,6 +323,7 @@ end
 	tbl.fov = 6
 	tbl.zero={
 		mils=false,
+		bc=0.498,
 		min=100,
 		max=1300,
 		step=100,

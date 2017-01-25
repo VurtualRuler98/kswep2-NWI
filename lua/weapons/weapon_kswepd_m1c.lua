@@ -18,6 +18,8 @@ SWEP.Spawnable = true
 SWEP.DrawOnce=false
 SWEP.OpenBolt=true
 SWEP.DefaultZerodata= {
+	mils=false,
+	bc=0.505,
 	min=92,
 	max=92*12,
 	step=92,
@@ -25,6 +27,8 @@ SWEP.DefaultZerodata= {
 	battlesight=false
 }
 SWEP.DefaultZerodataAlt={
+	mils=false,
+	bc=0.505,
 	min=92,
 	max=92*9,
 	step=92,

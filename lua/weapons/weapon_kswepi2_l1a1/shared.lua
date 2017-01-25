@@ -35,6 +35,8 @@ SWEP.Primary.Damage = 40
 SWEP.Primary.Spread = 0.001
 --TODO: verify L1A1 and FAL sights
 SWEP.DefaultZerodata = {
+	mils=false,
+	bc=0.393,
 	min=200,
 	max=600,
 	step=100,
