@@ -160,11 +160,11 @@ end
 	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
 	tbl.fov = 1.94
 	tbl.zero={
-		mils=false,
+		mils=10,
 		bc=-1,
-		min=100,
-		max=2000,
-		step=50,
+		min=-30,
+		max=200,
+		step=1,
 		default=100,
 		battlesight=false
 	}
@@ -286,30 +286,26 @@ end
 	tbl.sensitivity=7
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
-	tbl.name = "~ 4-12x mil scope"
-	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
+	tbl.name = "~ Trijicon TARS 3-15x"
+	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
 	tbl.fov = 2
 	tbl.zero={
 		mils=10,
 		bc=-1,
-		min=-100,
-		max=100,
+		min=-220,
+		max=220,
 		step=1,
 		default=100,
 		battlesight=false
 	}
-	tbl.fovmax = 6
-	tbl.fovmin = 2
-	tbl.fovsteps = 8
+	tbl.fovmax = 7.162
+	tbl.fovmin = 1.432
+	tbl.fovsteps = 12
 	tbl.rtscope = true
 	tbl.rtmat = "models/weapons/optics/lense_rt"
-	tbl.reticle="materials/kswep/ret_mil.png"
-	tbl.retzoom=12
-	tbl.retzoommax=12
-	tbl.retzoommin=48 --for some reason this is required? TODO fix
-	tbl.IronPos = Vector(0,0,0.7)
+	tbl.IronPos = Vector(0,0,0.5)
 	tbl.IronAng = Vector(0,0,0)
-	tbl.sensitivity=12
+	tbl.sensitivity=15
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "~ 4x scope"
