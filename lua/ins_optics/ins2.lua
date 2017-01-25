@@ -36,7 +36,7 @@ end
 		min=100,
 		max=100,
 		step=0,
-		default=false,
+		default=-1,
 		battlesight=false
 	}
 	def.rtranger=false
