@@ -46,6 +46,9 @@ end
 	def.super=false
 	def.reticle=false
 	def.retoverride=false
+	def.retcolor=color_black
+	def.retpix=512
+	def.retpixmil=10
 	def.retzoom=0
 	def.retzoommax=0
 	def.retzoommin=0
@@ -287,8 +290,8 @@ end
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "~ Trijicon TARS 3-15x"
-	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
-	tbl.fov = 2
+	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
+	tbl.fov = 1.432
 	tbl.zero={
 		mils=10,
 		bc=-1,
@@ -302,6 +305,13 @@ end
 	tbl.fovmin = 1.432
 	tbl.fovsteps = 12
 	tbl.rtscope = true
+	tbl.reticle="kswep/ret_tars.png"
+	tbl.retcolor=color_white
+	tbl.retzoom=15
+	tbl.retzoommax=15
+	tbl.retzoommin=3
+	tbl.retpix=1024
+	tbl.retpixmil=4
 	tbl.rtmat = "models/weapons/optics/lense_rt"
 	tbl.IronPos = Vector(0,0,0.5)
 	tbl.IronAng = Vector(0,0,0)
