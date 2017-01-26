@@ -177,7 +177,7 @@ end
 	tbl.fovmin = 1.94
 	tbl.fovsteps = 5
 	tbl.rtscope = true
-	tbl.luareticle="p3"
+	tbl.luareticle="leupold_mil"
 	tbl.retcolor=color_black
 	tbl.rtmat = "models/weapons/optics/lense_rt"
 	tbl.IronPos = Vector(0,0,0.5)
@@ -186,11 +186,11 @@ end
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "Unertl 10x Tactical"
-	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
+	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
 	tbl.fov = 1.09
 	tbl.zero={
 		mils=false,
-		bc=-1,
+		bc=0.485, --roughly?
 		min=100,
 		max=1000,
 		step=100,
@@ -198,6 +198,9 @@ end
 		battlesight=false
 	}
 	tbl.rtscope = true
+	tbl.luareticle="leupold_mil"
+	tbl.zerovel=2550
+	tbl.retcolor=color_black
 	tbl.rtmat = "models/weapons/optics/lense_rt"
 	tbl.IronPos = Vector(0,0,0.5)
 	tbl.IronAng = Vector(0,0,0)
