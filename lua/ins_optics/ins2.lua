@@ -318,6 +318,32 @@ end
 	tbl.sensitivity=15
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
+	tbl.name = "~ Duplex 2x Amber"
+	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
+	tbl.fov = 10
+	tbl.zero={
+		mils=10,
+		bc=-1,
+		min=-100,
+		max=100,
+		step=1,
+		default=100,
+		battlesight=false
+	}
+	tbl.fovmax = 11
+	tbl.fovmin = 11
+	tbl.fovsteps = 10
+	tbl.rtscope = true
+	tbl.reticle="kswep/ret_duplex.png"
+	tbl.retcolor=Color(255,126,0,255)
+	tbl.retpix=1024
+	tbl.retpixmil=1
+	tbl.rtmat = "models/weapons/optics/lense_rt"
+	tbl.IronPos = Vector(0,0,0.5)
+	tbl.IronAng = Vector(0,0,0)
+	tbl.sensitivity=15
+	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
 	tbl.name = "~ 4x scope"
 	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
 	tbl.fov = 6
