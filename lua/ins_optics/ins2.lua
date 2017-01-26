@@ -45,6 +45,7 @@ end
 	def.colglare=0.3
 	def.super=false
 	def.reticle=false
+	def.luareticle=false
 	def.retoverride=false
 	def.retcolor=color_black
 	def.retpix=512
@@ -160,7 +161,7 @@ end
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "~ 3-12x50 PM II"
-	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
+	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
 	tbl.fov = 1.94
 	tbl.zero={
 		mils=10,
@@ -175,6 +176,8 @@ end
 	tbl.fovmin = 1.94
 	tbl.fovsteps = 5
 	tbl.rtscope = true
+	tbl.luareticle="p3"
+	tbl.retcolor=color_black
 	tbl.rtmat = "models/weapons/optics/lense_rt"
 	tbl.IronPos = Vector(0,0,0.5)
 	tbl.IronAng = Vector(0,0,0)
@@ -334,10 +337,8 @@ end
 	tbl.fovmin = 11
 	tbl.fovsteps = 10
 	tbl.rtscope = true
-	tbl.reticle="kswep/ret_duplex.png"
+	tbl.luareticle="duplex"
 	tbl.retcolor=Color(255,126,0,255)
-	tbl.retpix=1024
-	tbl.retpixmil=1
 	tbl.rtmat = "models/weapons/optics/lense_rt"
 	tbl.IronPos = Vector(0,0,0.5)
 	tbl.IronAng = Vector(0,0,0)
