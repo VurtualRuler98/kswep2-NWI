@@ -46,6 +46,7 @@ end
 	def.super=false
 	def.reticle=false
 	def.luareticle=false
+	def.luaretsfp=false
 	def.retoverride=false
 	def.retcolor=color_black
 	def.retpix=512
@@ -204,7 +205,7 @@ end
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "~ Mark AR Mod 1 3-9x"
-	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
+	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
 	tbl.fov = 2.4
 	tbl.zero={
 		mils=10,
@@ -219,6 +220,9 @@ end
 	tbl.fovmin = 2.4
 	tbl.fovsteps = 6
 	tbl.rtscope = true
+	tbl.luareticle="leupold_mil"
+	tbl.luaretsfp=2.4
+	tbl.retcolor=color_black
 	tbl.rtmat = "models/weapons/optics/lense_rt"
 	tbl.IronPos = Vector(0,0,0.5)
 	tbl.IronAng = Vector(0,0,0)
