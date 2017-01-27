@@ -182,7 +182,8 @@ end
 	tbl.rtmat = "models/weapons/optics/lense_rt"
 	tbl.IronPos = Vector(0,0,0.5)
 	tbl.IronAng = Vector(0,0,0)
-	tbl.sensitivity=8
+	tbl.sensitivity=12
+	tbl.minsensitivity=3
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "Unertl 10x Tactical"
@@ -256,7 +257,7 @@ end
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "~ Mk 4 MR/T 1.5-5x"
-	tbl.model ="models/weapons/upgrades/a_optic_m40.mdl"
+	tbl.model ="models/weapons/upgrades/a_optic_mosin_noret.mdl"
 	tbl.fov = 4.5
 	tbl.zero={
 		mils=false,
@@ -271,10 +272,14 @@ end
 	tbl.fovmin = 4.5
 	tbl.fovsteps = 4
 	tbl.rtscope = true
+	tbl.luareticle="leupold_spr"
+	tbl.luaretsfp=4.5
+	tbl.retcolor=color_black
 	tbl.rtmat = "models/weapons/optics/lense_rt"
 	tbl.IronPos = Vector(0,0,0.5)
 	tbl.IronAng = Vector(0,0,0)
 	tbl.sensitivity=5
+	tbl.minsensitivity=1.5
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "7x scope"
@@ -326,6 +331,7 @@ end
 	tbl.IronPos = Vector(0,0,0.5)
 	tbl.IronAng = Vector(0,0,0)
 	tbl.sensitivity=15
+	tbl.minsensitivity=3
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "~ Duplex 2x Amber"
