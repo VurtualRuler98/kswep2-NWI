@@ -27,12 +27,12 @@ SWEP.DefaultZerodata= {
 	battlesight=false
 }
 SWEP.DefaultZerodataAlt={
-	mils=false,
-	bc=0.505,
-	min=92,
-	max=92*9,
-	step=92,
-	default=92,
+	moa=1,
+	bc=0.405,
+	min=0,
+	max=72,
+	step=1,
+	default=92*3,
 	battlesight=false
 	
 }
@@ -88,9 +88,10 @@ SWEP.MergeAttachments = {
 SWEP.DefaultSight="models/weapons/upgrades/a_optic_garand.mdl"
 SWEP.RTScope=true
 SWEP.ScopeMat="models/weapons/optics/lense_rt"
-SWEP.ScopeOverlayMat="models/weapons/optics/weaver_crosshair"
-SWEP.MaxSensitivity=2.5
-SWEP.ScopeFOV=6.7
+SWEP.ScopeLuaReticle="m82"
+SWEP.ScopeReticleColor=color_black
+SWEP.MaxSensitivity=2.2
+SWEP.ScopeFOV=7.05
 SWEP.InsAttachments=true
 SWEP.NoOpticMounting=true
 SWEP.Anims.IdleAnimEmpty=ACT_VM_IDLE_EMPTY
