@@ -283,28 +283,6 @@ end
 	tbl.minsensitivity=1.5
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
-	tbl.name = "7x scope"
-	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
-	tbl.fov = 3.3
-	tbl.zero={
-		mils=false,
-		bc=-1,
-		min=100,
-		max=2000,
-		step=100,
-		default=100,
-		battlesight=false
-	}
-	tbl.fovmax = 3.3
-	tbl.fovmin = 3.3
-	tbl.fovsteps = nil
-	tbl.rtscope = true
-	tbl.rtmat = "models/weapons/optics/lense_rt"
-	tbl.IronPos = Vector(0,0,0.7)
-	tbl.IronAng = Vector(0,0,0)
-	tbl.sensitivity=7
-	AddKswepScope(tbl)
-	local tbl = table.Copy(def)
 	tbl.name = "~ Trijicon TARS 3-15x"
 	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
 	tbl.fov = 1.432
@@ -359,27 +337,7 @@ end
 	tbl.sensitivity=15
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
-	tbl.name = "~ 4x scope"
-	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
-	tbl.fov = 6
-	tbl.zero={
-		mils=false,
-		bc=-1,
-		min=100,
-		max=2000,
-		step=100,
-		default=100,
-		battlesight=false
-	}
-	tbl.fovsteps = nil
-	tbl.rtscope = true
-	tbl.rtmat = "models/weapons/optics/lense_rt"
-	tbl.IronPos = Vector(0,0,0.7)
-	tbl.IronAng = Vector(0,0,0)
-	tbl.sensitivity=4
-	AddKswepScope(tbl)
-	local tbl = table.Copy(def)
-	tbl.name = "~ M91/30 PU 7N1"
+	tbl.name = "M91/30 PU 7N1"
 	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
 	tbl.fov = 6
 	tbl.zero={
