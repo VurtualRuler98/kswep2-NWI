@@ -261,10 +261,11 @@ end
 	tbl.fov = 4.5
 	tbl.zero={
 		mils=false,
+		moa=2,
 		bc=-1,
-		min=100,
-		max=800,
-		step=25,
+		min=-120,
+		max=120,
+		step=1,
 		default=100,
 		battlesight=false
 	}
