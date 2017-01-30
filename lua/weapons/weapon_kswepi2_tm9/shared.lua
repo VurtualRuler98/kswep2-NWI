@@ -94,7 +94,6 @@ SWEP.ManualHands="models/weapons/v_hands_sec_m.mdl"
 SWEP.InsAttachments=true
 SWEP.Anims.InitialDrawAnim=ACT_VM_READY
 SWEP.MagType="M9t"
-SWEP.IsSecondaryWeapon=true
 SWEP.Anims.ShootAnim=ACT_VM_IDLE
 SWEP.Anims.IronShootAnim=ACT_VM_IIDLE
 SWEP.Anims.LowerAnim = ACT_VM_DOWN

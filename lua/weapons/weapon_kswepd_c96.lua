@@ -77,7 +77,6 @@ SWEP.Anims.ReloadAnimEmpty=ACT_VM_RELOADEMPTY
 SWEP.IronSightsPos = Vector(-2.6325, -2, 0.7)
 SWEP.IronSightsAng = Vector(1, 0, 0)
 SWEP.InsNoIronAnim=true
-SWEP.IsSecondaryWeapon=true
 SWEP.MergeAttachments = {
 	--mag = "models/weapons/upgrades/a_magazine_c96_20.mdl",
 	barrel = "models/weapons/upgrades/a_barrel_c96_short.mdl"

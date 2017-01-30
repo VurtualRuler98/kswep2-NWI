@@ -85,7 +85,6 @@ SWEP.Anims.InitialDrawAnim=ACT_VM_READY
 SWEP.Anims.ReloadAnimEmpty=ACT_VM_RELOADEMPTY
 SWEP.EmptyAnims=true
 SWEP.MagType=nil
-SWEP.IsSecondaryWeapon=true
 SWEP.Anims.IdleAnimEmpty=ACT_VM_IDLE_EMPTY
 SWEP.Anims.ShootLastAnim=ACT_VM_PRIMARYATTACK
 SWEP.Anims.ShootLastIronAnim=ACT_VM_ISHOOT

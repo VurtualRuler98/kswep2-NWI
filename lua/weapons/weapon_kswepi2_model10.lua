@@ -89,7 +89,6 @@ SWEP.MergeAttachments = {
 SWEP.Anims.InitialDrawAnim=ACT_VM_READY
 SWEP.EmptyAnims=false
 SWEP.MagType="38REV"
-SWEP.IsSecondaryWeapon=true
 SWEP.Anims.LowerAnim = ACT_VM_DOWN
 function SWEP:ReloadAct(force)
 	self:ReloadMag(force)	

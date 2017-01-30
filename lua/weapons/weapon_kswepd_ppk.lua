@@ -76,7 +76,6 @@ SWEP.Anims.ReloadAnimEmpty=ACT_VM_RELOADEMPTY
 SWEP.IronSightsPos = Vector(-1.909, -2, 0.56)
 SWEP.IronSightsAng = Vector(0.1, -0.02, 0)
 SWEP.InsNoIronAnim=true
-SWEP.IsSecondaryWeapon=true
 SWEP.MergeAttachments = {
  }
 --SWEP.OpticMountModel = "models/weapons/upgrades/a_modkit_m1a1.mdl" 
