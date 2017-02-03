@@ -15,7 +15,7 @@ sound.Add({
 	volume = 1.0,
 	pitch = {100,105},
 	sound = "weapons/m1911/m1911_suppressed_fp.wav",
-	level = 120, --osprey 9mm average 127
+	level = 110, --osprey 9mm average 127
 	channel = CHAN_STATIC
 })
 sound.Add({
