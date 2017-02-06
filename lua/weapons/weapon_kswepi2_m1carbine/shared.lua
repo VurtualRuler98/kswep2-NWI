@@ -54,6 +54,7 @@ SWEP.LoweredOffset = 2
 SWEP.IronSightHeight=1
 SWEP.UseHands = false
 SWEP.MagazineCount = 4
+SWEP.MaxMagsBonus=4
 SWEP.MuzzleVelMod=1.02
 SWEP.MagSize = 15
 SWEP.Primary.ClipSize = SWEP.MagSize

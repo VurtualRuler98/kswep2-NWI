@@ -53,7 +53,6 @@ SWEP.ViewModel = "models/weapons/v_c96_carbine.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_mp5.mdl"
 SWEP.UseHands = false
 SWEP.MagSize = 40 --why not?
-SWEP.MaxMags=4
 SWEP.Primary.ClipSize = SWEP.MagSize
 SWEP.Caliber = "vammo_22_lead" --wheeee
 SWEP.Primary.Sound = Sound("Weapon_c96wtf.Single")

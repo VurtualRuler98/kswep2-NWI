@@ -52,7 +52,6 @@ SWEP.ViewModel = "models/weapons/v_stg44.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.UseHands = false
 SWEP.MagSize = 30
-SWEP.MaxMags = 6
 SWEP.Primary.ClipSize = SWEP.MagSize
 SWEP.Caliber = "vammo_792x33_ball"
 SWEP.Primary.Sound = Sound("Weapon_stg44.Single")

@@ -33,6 +33,7 @@ SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.09
 SWEP.IronSightHeight=2
 SWEP.Primary.Damage = 40
+SWEP.MaxMagsBonus=2
 SWEP.Primary.Spread = 0.001
 --TODO: verify L1A1 and FAL sights
 SWEP.DefaultZerodata = {

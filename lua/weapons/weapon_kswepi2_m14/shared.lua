@@ -31,6 +31,7 @@ SWEP.Anims = SWEP.Anims or {}
 SWEP.Category = "KSwep Auto"
 SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.09
+SWEP.MaxMagsBonus=2
 SWEP.Primary.Damage = 40
 SWEP.DefaultZerodata = {
 	mils=false,

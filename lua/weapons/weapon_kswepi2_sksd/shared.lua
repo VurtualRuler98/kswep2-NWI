@@ -54,6 +54,7 @@ SWEP.FlashlightModel="models/weapons/upgrades/a_flashlight_band.mdl"
 SWEP.LaserModel="models/weapons/upgrades/a_laser_band.mdl"
 SWEP.LoweredOffset = 2
 SWEP.UseHands = false
+SWEP.MaxMagsBonus=6
 SWEP.MagazineCount = 4
 SWEP.MuzzleVelMod=1.02
 SWEP.MagSize = 20
