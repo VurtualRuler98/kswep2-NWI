@@ -22,7 +22,7 @@ if (SERVER) then
 end
 
 if (CLIENT) then
-	SWEP.PrintName = "ins2 Model 10 (Manual)"
+	SWEP.PrintName = "ins2 Model 10 (Speedloader)"
 	SWEP.Author = "vurtual"
 	SWEP.Slot = 1
 	SWEP.SlotPos = 0
@@ -56,8 +56,8 @@ SWEP.MagazineCount = 4
 SWEP.MuzzleVelMod=1
 SWEP.RecoilControl=1
 SWEP.MagSize = 6
-SWEP.MaxMags=6
-SWEP.MaxMagsBonus=36
+SWEP.MaxMags=2
+SWEP.MaxMagsBonus=4
 SWEP.OpenBolt=true
 SWEP.DoubleAction=true
 SWEP.Suppressable=false
@@ -76,7 +76,7 @@ SWEP.HandlingModifier=600
 SWEP.InsAnims=true
 SWEP.Auto=false
 SWEP.Firemode=true
-SWEP.HoldType="revolver"
+SWEP.HoldType="pistol"
 SWEP.IdleType="normal"
 SWEP.SelectFire=false
 SWEP.IronSightsPos = Vector(-1.85, 2, 1.19)
@@ -84,21 +84,17 @@ SWEP.IronSightsAng = Vector(-1.8,0,0)
 SWEP.InsNoIronAnim=true
 SWEP.ManualHands="models/weapons/v_hands_sec_m.mdl"
 SWEP.InsAttachments=true
-SWEP.SingleReload=true
 SWEP.MergeAttachments = {
+	speedloader="models/weapons/upgrades/a_speedloader_rev.mdl"
 }
 SWEP.Anims.InitialDrawAnim=ACT_VM_READY
 SWEP.EmptyAnims=false
-SWEP.MagType=""
-SWEP.SingleReloadDump=true
+SWEP.MagType="38REV"
 SWEP.Anims.LowerAnim = ACT_VM_DOWN
-SWEP.Anims.StartReloadAnim=ACT_VM_RELOAD
-SWEP.Anims.MidReloadAnim=ACT_VM_RELOAD_INSERT
-SWEP.Anims.EndReloadAnim = ACT_VM_RELOAD_END
 function SWEP:ReloadAct(force)
-	self:ReloadTube()
+	self:ReloadMag(force)	
 end
 function SWEP:DiscoverModelAnims()
 	self:SetAnim("RunAnim",self:DiscoverAnim("ACT_VM_SPRINT"))
-	--self:SetAnim("ReloadAnim",self:DiscoverAnim("ACT_VM_RELOAD_SPEED"))
+	self:SetAnim("ReloadAnim",self:DiscoverAnim("ACT_VM_RELOAD_SPEED"))
 end
