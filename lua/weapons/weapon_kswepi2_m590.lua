@@ -45,6 +45,7 @@ SWEP.DefaultZerodata= {
 	battlesight=false
 }
 SWEP.DrawOnce=false
+SWEP.MagClass="Shotshell"
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_m590.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"

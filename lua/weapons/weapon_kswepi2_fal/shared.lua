@@ -47,6 +47,7 @@ SWEP.DefaultZerodata = {
 }
 SWEP.AdminSpawnable = true
 SWEP.MaxMagsBonus=2
+SWEP.MagClass="BattleRifle"
 SWEP.ViewModel = "models/weapons/v_fal.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_g3sg1.mdl"
 SWEP.FlashlightModel="models/weapons/upgrades/a_flashlight_band.mdl"

@@ -35,6 +35,7 @@ SWEP.Primary.Delay = 0.1
 SWEP.Primary.Spread = 0.0075
 SWEP.IronSightHeight=0.5
 SWEP.Spawnable = true
+SWEP.MagClass="Pistol1"
 SWEP.DrawOnce=false
 SWEP.DefaultZerodata = {
 	mils=false,

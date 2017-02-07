@@ -48,6 +48,7 @@ SWEP.DefaultZerodata= {
 	battlesight=300
 }
 SWEP.DefaultZeroStep=100
+SWEP.MagClass="Drum"
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_rpk.mdl"
 --SWEP.WorldModel = "models/weapons/w_mk18.mdl"

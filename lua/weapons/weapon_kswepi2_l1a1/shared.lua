@@ -47,6 +47,7 @@ SWEP.DefaultZerodata = {
 }
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
+SWEP.MagClass="BattleRifle"
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_l1a1.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_g3sg1.mdl"

@@ -45,6 +45,7 @@ SWEP.DefaultZerodata = {
 	battlesight=false
 }
 SWEP.MuzzleVelMod=1
+SWEP.MagClass="Stick"
 SWEP.ModeName0="SINGLE"
 SWEP.DrawOnce=false
 SWEP.AdminSpawnable = true

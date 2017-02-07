@@ -37,6 +37,7 @@ SWEP.Spawnable = true
 SWEP.DrawOnce=false
 SWEP.MaxRecoil=8
 SWEP.OpenBolt=false
+SWEP.MagClass="Stick"
 SWEP.DefaultZerodata= {
 	mils=false,
 	bc=0.125, --remington golden bullet 22

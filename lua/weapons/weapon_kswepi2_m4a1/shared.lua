@@ -47,6 +47,7 @@ SWEP.DefaultZerodata = {
 	battlesight=false
 }
 SWEP.Spawnable = true
+SWEP.MagClass="STANAG"
 SWEP.DrawOnce=false
 SWEP.RecoilMassModifier=0.20
 SWEP.AdminSpawnable = true

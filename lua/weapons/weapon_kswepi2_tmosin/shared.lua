@@ -47,6 +47,7 @@ SWEP.DefaultZerodata = {
 	battlesight=false
 }
 SWEP.MuzzleVelMod=1.04
+SWEP.MagClass="Box"
 SWEP.DrawOnce=false
 SWEP.SingleReloadFiringPin=false
 SWEP.AdminSpawnable = true
@@ -60,6 +61,9 @@ SWEP.MaxMags = 5
 SWEP.MaxMagsBonus=20
 SWEP.Primary.ClipSize = SWEP.MagSize
 SWEP.Caliber = "vammo_762x54t"
+SWEP.MagType = "box_762x54t"
+SWEP.SingleClips=true
+SWEP.ReloadClipSize=20
 SWEP.Primary.Sound = Sound("Weapon_tmosin.Single")
 SWEP.Primary.SoundEmpty = Sound("weapon_mosin.Empty")
 SWEP.ViewModelFlip = false

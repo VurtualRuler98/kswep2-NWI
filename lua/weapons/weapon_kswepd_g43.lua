@@ -34,6 +34,7 @@ SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.3
 SWEP.Primary.Spread = 0.003
 SWEP.Spawnable = true
+SWEP.MagClass="BoltMag"
 SWEP.DefaultZerodata = {
 	mils=false,
 	bc=0.559,

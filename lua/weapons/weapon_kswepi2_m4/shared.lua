@@ -91,6 +91,7 @@ SWEP.Anims.SafetyAnim=ACT_VM_FIREMODE
 SWEP.IronSightsPos = Vector(-2.495, -2, 0.65)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.AltIrons = true
+SWEP.MagClass="STANAG"
 SWEP.InsNoIronAnim=true
 SWEP.ManualHands="models/weapons/v_hands_sec_m.mdl"
 SWEP.DefaultSight="models/weapons/upgrades/a_carryhandle_m4.mdl"

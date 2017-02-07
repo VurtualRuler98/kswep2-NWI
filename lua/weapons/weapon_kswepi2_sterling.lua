@@ -91,6 +91,7 @@ SWEP.Anims.LowerAnimEmpty=ACT_VM_DOWN_EMPTY
 SWEP.Anims.StowAnimEmpty=ACT_VM_HOLSTER_EMTPY
 SWEP.Anims.UnstowAnimEmpty=ACT_VM_DRAW_EMPTY
 SWEP.InsNoSafetySound=true
+SWEP.MagClass="Stick"
 SWEP.IronSightsPos = Vector(-1.674, -2, 1.18)
 SWEP.IronSightsAng = Vector(0, 0, 9)
 SWEP.ScopeOffsetPos=Vector(0.42,0,-1.28)

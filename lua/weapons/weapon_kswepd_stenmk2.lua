@@ -33,6 +33,7 @@ SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.1
 SWEP.Primary.Spread = 0.007
 SWEP.Spawnable = true
+SWEP.MagClass="Stick"
 SWEP.DrawOnce=false
 SWEP.OpenBolt=true
 SWEP.DefaultZerodata = {

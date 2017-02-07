@@ -47,6 +47,7 @@ SWEP.DefaultZerodata= {
 	battlesight=false
 }
 SWEP.AdminSpawnable = true
+SWEP.MagClass="Speedloader"
 SWEP.ViewModel = "models/weapons/v_38rev.mdl"
 --SWEP.WorldModel = "models/weapons/w_m9.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_elite_single.mdl"

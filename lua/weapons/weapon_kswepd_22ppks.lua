@@ -52,6 +52,7 @@ SWEP.WorldModel = "models/weapons/w_pist_p228.mdl"
 SWEP.UseHands = false
 SWEP.MuzzleVelMod=0.72
 SWEP.MagSize = 10
+SWEP.MagClass="Pistol1"
 SWEP.MaxMagsBonus=4
 SWEP.Primary.ClipSize = SWEP.MagSize
 SWEP.Caliber = "vammo_22_lead"

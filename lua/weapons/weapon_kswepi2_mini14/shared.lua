@@ -45,6 +45,7 @@ SWEP.DefaultZerodata = {
 	battlesight=false
 }
 SWEP.Spawnable = true
+SWEP.MagClass="STANAG"
 SWEP.DrawOnce=false
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_mini14.mdl"

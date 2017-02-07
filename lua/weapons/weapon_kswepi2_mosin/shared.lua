@@ -46,6 +46,7 @@ SWEP.DefaultZerodata = {
 }
 SWEP.SingleReloadFiringPin=true
 SWEP.DefaultZeroStep=100
+SWEP.MagClass="RifleClip"
 SWEP.MuzzleVelMod=1
 SWEP.DrawOnce=false
 SWEP.AdminSpawnable = true

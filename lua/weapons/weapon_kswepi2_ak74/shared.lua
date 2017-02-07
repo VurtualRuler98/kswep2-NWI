@@ -45,6 +45,7 @@ SWEP.DefaultZerodata = {
 	default=0,
 	battlesight=440
 }
+SWEP.MagClass="AK"
 SWEP.DefaultZero=0
 SWEP.DefaultBattlesightZero=440
 SWEP.DefaultMinZero=0

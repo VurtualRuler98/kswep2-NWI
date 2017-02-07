@@ -46,6 +46,7 @@ SWEP.DefaultZerodata= { --WHAT ARE THESE SIGHTS MADE FOR
 	battlesight=false
 }
 SWEP.AdminSpawnable = true
+SWEP.MagClass="Stick"
 SWEP.ViewModel = "models/weapons/v_ump45.mdl"
 --SWEP.WorldModel = "models/weapons/w_mk18.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_ump45.mdl"

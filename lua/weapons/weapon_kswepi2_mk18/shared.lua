@@ -46,6 +46,7 @@ SWEP.DefaultZerodata = {
 	battlesight=false
 }
 SWEP.DrawOnce=false
+SWEP.MagClass="STANAG"
 SWEP.FlashlightModel="models/weapons/upgrades/a_flashlight_rail.mdl"
 SWEP.LaserModel="models/weapons/upgrades/a_laser_rail.mdl"
 SWEP.AdminSpawnable = true

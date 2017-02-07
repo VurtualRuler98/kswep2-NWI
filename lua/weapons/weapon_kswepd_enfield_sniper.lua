@@ -35,6 +35,7 @@ SWEP.Primary.Delay = 0.3
 SWEP.Primary.Damage = 38
 SWEP.Primary.Spread = 0.003
 SWEP.Spawnable = true
+SWEP.MagClass="RifleClip"
 SWEP.DefaultZerodata= {
 	mils=false,
 	bc=0.478,

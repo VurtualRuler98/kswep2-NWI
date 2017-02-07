@@ -33,6 +33,7 @@ SWEP.Category = "KSwep Primary"
 SWEP.Base = "weapon_kswep"
 SWEP.Primary.Delay = 0.3
 SWEP.Primary.Spread = 0.003
+SWEP.MagClass="RifleClip"
 SWEP.Spawnable = true
 SWEP.DefaultZerodata = {
 	mils=false,

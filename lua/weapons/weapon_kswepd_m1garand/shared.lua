@@ -46,6 +46,7 @@ SWEP.DefaultZerodata = {
 	battlesight=false
 }
 SWEP.AdminSpawnable = true
+SWEP.MagClass="RifleClip2"
 SWEP.ViewModel = "models/weapons/v_garand_doi.mdl"
 --SWEP.WorldModel = "models/weapons/w_mk18.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"

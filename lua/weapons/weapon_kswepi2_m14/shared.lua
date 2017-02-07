@@ -45,6 +45,7 @@ SWEP.DefaultZerodata = {
 SWEP.Primary.Spread = 0.001
 SWEP.IronSightHeight=1.1
 SWEP.Spawnable = true
+SWEP.MagClass="BattleRifle"
 SWEP.DrawOnce=false
 SWEP.FlashlightModel="models/weapons/upgrades/a_flashlight_rail.mdl"
 SWEP.LaserModel="models/weapons/upgrades/a_laser_rail.mdl"

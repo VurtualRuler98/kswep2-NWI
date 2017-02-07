@@ -46,6 +46,7 @@ SWEP.DefaultZerodata = {
 }
 SWEP.MuzzleVelMod=1
 SWEP.ModeName0="SINGLE"
+SWEP.MagClass="RifleClip"
 SWEP.DrawOnce=false
 SWEP.IronSightHeight=1.065
 SWEP.AdminSpawnable = true

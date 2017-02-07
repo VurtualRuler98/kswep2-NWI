@@ -34,6 +34,7 @@ SWEP.Base = "weapon_kswep"
 SWEP.IronSightHeight=0.5
 SWEP.Primary.Delay = 0.1
 SWEP.Primary.Spread = 0.0075
+SWEP.MagClass="Pistol2"
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
 SWEP.DefaultZerodata = {

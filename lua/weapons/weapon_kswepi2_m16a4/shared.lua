@@ -46,6 +46,7 @@ SWEP.DefaultZerodata = {
 SWEP.Spawnable = true
 SWEP.IronSightHeight=2.8
 SWEP.DrawOnce=false
+SWEP.MagClass="STANAG"
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_m16a3.mdl"
 --SWEP.WorldModel = "models/weapons/w_m16.mdl"

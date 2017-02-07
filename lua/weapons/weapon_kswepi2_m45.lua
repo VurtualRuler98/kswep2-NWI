@@ -45,6 +45,7 @@ SWEP.DefaultZerodata = {
 	default=50,
 	battlesight=false
 }
+SWEP.MagClass="Pistol1"
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_m45.mdl"
 --SWEP.WorldModel = "models/weapons/w_m9.mdl"

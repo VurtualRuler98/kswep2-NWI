@@ -47,6 +47,7 @@ SWEP.DefaultZerodata = {
 	battlesight=300
 }
 SWEP.AdminSpawnable = true
+SWEP.MagClass="AK"
 SWEP.ViewModel = "models/weapons/v_sks.mdl"
 --SWEP.WorldModel = "models/weapons/w_mk18.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"

@@ -53,6 +53,7 @@ SWEP.DefaultZerodataAlt = {
 	battlesight=false
 }
 SWEP.MuzzleVelMod=1
+SWEP.MagClass="BoltMag"
 SWEP.ModeName0="SINGLE"
 SWEP.DrawOnce=false
 SWEP.AdminSpawnable = true

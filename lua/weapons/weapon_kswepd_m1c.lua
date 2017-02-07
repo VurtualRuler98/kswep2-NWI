@@ -17,6 +17,7 @@ SWEP.Primary.Spread = 0.004
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
 SWEP.OpenBolt=true
+SWEP.MagClass="RifleClip2"
 SWEP.DefaultZerodata= {
 	mils=false,
 	bc=0.505,

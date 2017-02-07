@@ -35,6 +35,7 @@ SWEP.Primary.Delay = 0.1
 SWEP.Primary.Damage = 7
 SWEP.Primary.Spread = 0.02
 SWEP.Spawnable = true
+SWEP.MagClass="Pistol1"
 SWEP.DrawOnce=false
 SWEP.OpenBolt=false
 SWEP.DefaultZerodata= {

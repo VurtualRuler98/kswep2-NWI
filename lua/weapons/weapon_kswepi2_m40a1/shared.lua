@@ -46,6 +46,7 @@ SWEP.DefaultZerodata = {
 	battlesight=false
 }
 SWEP.MuzzleVelMod=1.04
+SWEP.MagClass="Box"
 SWEP.DrawOnce=false
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_m40a1.mdl"
@@ -58,6 +59,9 @@ SWEP.MaxMags = 5
 SWEP.MaxMagsBonus = 20
 SWEP.Primary.ClipSize = SWEP.MagSize
 SWEP.Caliber = "vammo_762x51_mk316mod0"
+SWEP.MagType = "box_762x51"
+SWEP.SingleClips=true
+SWEP.ReloadClipSize=20
 SWEP.Primary.Sound = Sound("Weapon_m40a1.Single")
 SWEP.Primary.SoundSup = Sound("Weapon_m40a1.SingleSilenced")
 SWEP.Primary.SoundEmpty = Sound("weapon_m40a1.Empty")

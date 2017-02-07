@@ -28,6 +28,7 @@ if (CLIENT) then
 	SWEP.SlotPos = 99
 end
 
+SWEP.MagClass="RifleClip"
 SWEP.Anims = SWEP.Anims or {}
 SWEP.Category = "KSwep Primary"
 SWEP.Base = "weapon_kswep"

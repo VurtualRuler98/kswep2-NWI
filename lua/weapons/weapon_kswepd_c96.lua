@@ -36,6 +36,7 @@ SWEP.Primary.Damage = 7
 SWEP.Primary.Spread = 0.014
 SWEP.Spawnable = true
 SWEP.DrawOnce=false
+SWEP.MagClass="PistolClip"
 SWEP.OpenBolt=false
 SWEP.DefaultZerodata= {
 	mils=false,
