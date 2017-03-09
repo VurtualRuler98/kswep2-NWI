@@ -186,6 +186,31 @@ end
 	tbl.minsensitivity=3
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
+	tbl.name = "Steiner T5Xi 3-15x50"
+	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
+	tbl.fov = 6.875
+	tbl.zero={
+		mils=10,
+		bc=-1,
+		min=-30,
+		max=200,
+		step=1,
+		default=100,
+		battlesight=false
+	}
+	tbl.fovmax = 6.875
+	tbl.fovmin = 1.394
+	tbl.fovsteps = 12
+	tbl.rtscope = true
+	tbl.luareticle="steiner_scr"
+	tbl.retcolor=color_black
+	tbl.rtmat = "models/weapons/optics/lense_rt"
+	tbl.IronPos = Vector(0,0,0.5)
+	tbl.IronAng = Vector(0,0,0)
+	tbl.sensitivity=12
+	tbl.minsensitivity=3
+	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
 	tbl.name = "Unertl 10x Tactical"
 	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
 	tbl.fov = 1.09
