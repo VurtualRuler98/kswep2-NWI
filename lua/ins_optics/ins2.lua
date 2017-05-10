@@ -161,7 +161,7 @@ end
 	tbl.sensitivity=100
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
-	tbl.name = "~ 3-12x50 PM II"
+	tbl.name = "Steiner 3-12x50 PM II"
 	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
 	tbl.fov = 1.94
 	tbl.zero={
@@ -177,7 +177,7 @@ end
 	tbl.fovmin = 1.94
 	tbl.fovsteps = 5
 	tbl.rtscope = true
-	tbl.luareticle="leupold_mil"
+	tbl.luareticle="steiner_p3"
 	tbl.retcolor=color_black
 	tbl.rtmat = "models/weapons/optics/lense_rt"
 	tbl.IronPos = Vector(0,0,0.5)
