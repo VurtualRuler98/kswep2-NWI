@@ -134,7 +134,7 @@ end
 	tbl.sensitivity=2
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
-	tbl.name = "~ СУПЕР ПРИЦЕЛ" --SUPER SCOPE
+	tbl.name = "~ СУПЕР ПРИЦЕЛ День" --SUPER SCOPE
 	tbl.model ="models/weapons/upgrades/a_optic_po4x24.mdl"
 	tbl.fov = 15
 	tbl.zero={
@@ -149,9 +149,10 @@ end
 	tbl.fovmax = 15
 	tbl.fovmin = 0.1
 	tbl.fovsteps = 12
-	tbl.nv=true
+	tbl.zerovel=-1337
+	--tbl.nv=true
 	tbl.rtscope = true
-	tbl.super=true
+	--tbl.super=true
 	tbl.rtranger=true
 	tbl.rtrangerx=50
 	tbl.rtrangery=-10
