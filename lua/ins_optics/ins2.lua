@@ -18,6 +18,10 @@ end
 	def.fovmin = nil
 	def.fovmax = nil
 	def.fovsteps=nil
+	def.ztable=nil
+	def.ztablealt=nil
+	def.ztablestr=nil
+	def.ztablestralt=nil
 	def.collimator=false
 	def.coltex=nil
 	def.colsize=0
