@@ -109,13 +109,25 @@ end
 	AddKswepScope(tbl)
 
 	local tbl = table.Copy(def)
-	tbl.name = "Aimpoint2"
+	tbl.name = "Aimpoint 2x Magnifier"
 	tbl.model ="models/weapons/upgrades/a_optic_aimp2x.mdl"
 	tbl.fov = 6
 	tbl.rtscope = true
 	tbl.rtmat = "models/weapons/optics/lense_rt"
 	tbl.IronPos = Vector(0,0,0.3)
 	tbl.IronAng = Vector(0,0,0)
+	tbl.sensitivity=1.5
+	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
+	tbl.name = "Duplex Prism 3x"
+	tbl.model ="models/weapons/upgrades/a_optic_aimp2x_noret_m.mdl"
+	tbl.fov = 4
+	tbl.rtscope = true
+	tbl.rtmat = "models/weapons/optics/lense_rt"
+	tbl.IronPos = Vector(0,-2,0.3)
+	tbl.IronAng = Vector(0,0,0)
+	tbl.luareticle="duplex_cheap"
+	tbl.retcolor=Color(0,255,0,255)
 	tbl.sensitivity=1.5
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
@@ -368,7 +380,7 @@ end
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "M91/30 PU 7N1"
-	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
+	tbl.model ="models/weapons/upgrades/a_optic_mosin_m.mdl"
 	tbl.fov = 6
 	tbl.zero={
 		mils=false,
