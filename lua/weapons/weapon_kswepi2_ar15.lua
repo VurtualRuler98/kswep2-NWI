@@ -44,6 +44,13 @@ SWEP.DefaultZerodata = {
 	default=300,
 	battlesight=false
 }
+SWEP.DefaultZeroTableStrings={}
+for i=-5,25 do SWEP.DefaultZeroTableStrings[i]=i end
+SWEP.DefaultZeroTableStrings[0]="0: 300m"
+SWEP.DefaultZeroTableStrings[2]="2: 25m/Zero"
+SWEP.DefaultZeroTableStrings[6]="6: 400m"
+SWEP.DefaultZeroTableStrings[14]="14: 500m"
+SWEP.DefaultZeroTableStrings[24]="24: 600m"
 SWEP.Spawnable = true
 SWEP.IronSightHeight=2.8
 SWEP.DrawOnce=false
