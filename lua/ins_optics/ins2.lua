@@ -421,7 +421,7 @@ end
 	tbl.IronAng = Vector(-1.3,0,0)
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
-	tbl.name = "Kobra"
+	tbl.name = "EKP-1S-03 Kobra"
 	tbl.model ="models/weapons/upgrades/a_optic_kobra.mdl"
 	tbl.collimator=true
 	tbl.colsize=0.15
@@ -429,6 +429,17 @@ end
 	tbl.coltex = "models/weapons/optics/kobra_dot"
 	tbl.IronPos = Vector(0,0,0.5)
 	tbl.IronAng = Vector(-1.3,0,0)
+	tbl.zero= {
+		mils=2.5,
+		min=-9,
+		max=9,
+		step=1,
+		default=100,
+		battlesight=false
+	}
+	tbl.ztablestr={}
+	for i=-9,9 do tbl.ztablestr[i]=i end
+	tbl.ztablestr[0]="0: 100m"
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
 	tbl.name = "Eotech"
