@@ -41,13 +41,21 @@ SWEP.Spawnable = true
 SWEP.DrawOnce=false
 SWEP.DefaultZerodata = {
 	mils=false,
+	moa=4,
 	bc=0.304,
-	min=300,
-	max=600,
-	step=100,
+	min=-5,
+	max=25,
+	step=1,
 	default=300,
 	battlesight=false
 }
+SWEP.DefaultZeroTableStrings={}
+for i=-5,25 do SWEP.DefaultZeroTableStrings[i]=i end
+SWEP.DefaultZeroTableStrings[0]="0: 300m"
+SWEP.DefaultZeroTableStrings[2]="2: 25m/Zero"
+SWEP.DefaultZeroTableStrings[6]="6: 400m"
+SWEP.DefaultZeroTableStrings[14]="14: 500m"
+SWEP.DefaultZeroTableStrings[24]="24: 600m"
 SWEP.RecoilMassModifier=0.20
 SWEP.AdminSpawnable = true
 SWEP.ViewModel = "models/weapons/v_m4a1.mdl"
