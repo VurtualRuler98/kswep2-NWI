@@ -131,6 +131,18 @@ end
 	tbl.sensitivity=1.5
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
+	tbl.name = "Trijicon ACOG 1.5x16S Compact"
+	tbl.model ="models/weapons/upgrades/a_optic_aimp2x_noret_m.mdl"
+	tbl.fov = 7.4
+	tbl.rtscope = true
+	tbl.rtmat = "models/weapons/optics/lense_rt"
+	tbl.IronPos = Vector(0,-2,0.3)
+	tbl.IronAng = Vector(0,0,0)
+	tbl.luareticle="trijicon_mini"
+	tbl.retcolor=Color(255,0,0,255)
+	tbl.sensitivity=1.5
+	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
 	tbl.name = "PO"
 	tbl.model ="models/weapons/upgrades/a_optic_po4x24.mdl"
 	tbl.fov = 6
