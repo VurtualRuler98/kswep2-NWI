@@ -337,6 +337,32 @@ end
 	tbl.minsensitivity=1.5
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
+	tbl.name = "Nightforce 2.5-10x Compact"
+	tbl.model ="models/weapons/upgrades/a_optic_mosin_noret_m.mdl"
+	tbl.fov = 7.7
+	tbl.zero={
+		mils=10,
+		bc=-1,
+		min=-135,
+		max=135,
+		step=1,
+		default=100,
+		battlesight=false
+	}
+	tbl.fovmax = 7.7
+	tbl.fovmin = 1.95
+	tbl.fovsteps = 9
+	tbl.rtscope = true
+	tbl.luareticle="nightforce_milr"
+	tbl.luaretsfp=1.95
+	tbl.retcolor=Color(255,0,0,255)
+	tbl.rtmat = "models/weapons/optics/lense_rt"
+	tbl.IronPos = Vector(0,0,0.6)
+	tbl.IronAng = Vector(0,0,0)
+	tbl.sensitivity=10
+	tbl.minsensitivity=2.5
+	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
 	tbl.name = "~ Trijicon TARS 3-15x"
 	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
 	tbl.fov = 1.432
