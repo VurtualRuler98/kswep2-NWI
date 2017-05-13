@@ -139,7 +139,7 @@ end
 	tbl.IronPos = Vector(0,-2,0.3)
 	tbl.IronAng = Vector(0,0,0)
 	tbl.luareticle="trijicon_mini"
-	tbl.retcolor=Color(255,0,0,255)
+	tbl.retcolor=Color(255,255,0,255)
 	tbl.sensitivity=1.5
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
