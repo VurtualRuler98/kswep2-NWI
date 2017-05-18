@@ -286,8 +286,35 @@ end
 	tbl.IronAng = Vector(0,0,0)
 	tbl.sensitivity=9
 	tbl.minsensitivity=3
-	tbl.retoverride="models/weapons/optics/mk4_crosshair"
 	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
+	tbl.name = "Mk 4 3-9x36mm TS-30"
+	tbl.model ="models/weapons/upgrades/a_optic_mosin_noret_m.mdl"
+	tbl.fov = 2.4
+	tbl.zero={
+		mils=false,
+		moa=1,
+		bc=-1,
+		min=-45,
+		max=45,
+		step=1,
+		default=100,
+		battlesight=false
+	}
+	tbl.fovmax = 6.7
+	tbl.fovmin = 2.57
+	tbl.fovsteps = 6
+	tbl.rtscope = true
+	tbl.luareticle="leupold_tmr"
+	tbl.luaretsfp=2.57
+	tbl.retcolor=Color(255,0,0,255)
+	tbl.rtmat = "models/weapons/optics/lense_rt"
+	tbl.IronPos = Vector(0,0,0.5)
+	tbl.IronAng = Vector(0,0,0)
+	tbl.sensitivity=9
+	tbl.minsensitivity=3
+	AddKswepScope(tbl)
+	local tbl = table.Copy(def)
 	tbl.name = "7x scope"
 	tbl.model ="models/weapons/upgrades/a_optic_mosin.mdl"
 	tbl.fov = 3.3
