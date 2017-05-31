@@ -191,7 +191,7 @@ end
 	tbl.sensitivity=100
 	AddKswepScope(tbl)
 	local tbl = table.Copy(def)
-	tbl.name = "Steiner 3-12x50 PM II"
+	tbl.name = "S&B 3-12x50 PM II"
 	tbl.model ="models/weapons/upgrades/a_optic_m40_noret.mdl"
 	tbl.fov = 1.94
 	tbl.zero={
